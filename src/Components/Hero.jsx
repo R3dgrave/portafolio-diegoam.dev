@@ -63,10 +63,10 @@ const Hero = () => {
             delay={3}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <button className="btn btn-neutral group flex items-center">
+            <a href="https://drive.google.com/file/d/1NCw4PSy_QHCeYWtBP8JtSn6_5OEsymrx/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-neutral group flex items-center">
               <Download  className="mr-2 h-4 w-4 transition-custom group-hover:-translate-y-1" />  
               Ver CV  
-            </button>
+            </a>
             <button
               className="btn group flex items-center"
               onClick={copyToClipboard}
