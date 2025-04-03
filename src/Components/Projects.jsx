@@ -12,7 +12,7 @@ const Projects = () => {
       externalLink:
         "https://r3dgrave.github.io/landingpage-programadorfreelance/",
       githubLink:
-        "https://github.com/juanpabon1/Landing-Page-Servicios-Freelance",
+        "https://github.com/R3dgrave/landingpage-programadorfreelance",
       technologies: ["React", "Tailwind"],
     },
     {
@@ -21,7 +21,7 @@ const Projects = () => {
         "App de notas creada con React, editor de texto para personalizar las notas, organizar las notas vinculando con etiquetas, adaptado a todos los dispositivos.",
       image: "/YourNotebook.webp",
       externalLink: "https://r3dgrave.github.io/YourNotebook/",
-      githubLink: "https://github.com/juanpabon1/YourNotebook",
+      githubLink: "https://github.com/R3dgrave/YourNotebook",
       technologies: ["React", "Tailwind"],
     },
     {
@@ -29,8 +29,8 @@ const Projects = () => {
       description:
         "Desarrollado con Angular 18, Node.js(Express.JS), MongoDB, Páginas(principal, productos, carrito de compras, lista de deseos, estado mi pedido, perfil). Panel de administrador CRUD(categorías, marcas, productos, pedidos). Adaptado a todos los dispositivos.",
       image: "/E-commerce.webp",
-      externalLink: "https://e-commerce-frontend-teal-one.vercel.app/",
-      githubLink: "https://github.com/juanpabon1/Tienda-Online",
+      externalLink: "https://e-commerce-frontend-teal-one.vercel.app//",
+      githubLink: "https://github.com/R3dgrave/E-Commerce-frontend",
       technologies: ["Angular", "Node.js", "MongoDB", "Express.JS"],
     },
     {
@@ -39,7 +39,7 @@ const Projects = () => {
         "Portafolio web personal con animaciones y diseño responsivo.",
       image: "/PortafolioV2.webp",
       externalLink: "https://r3dgrave.github.io/portafolio_v2/",
-      githubLink: "https://github.com/juanpabon1/Portfolio-v1",
+      githubLink: "https://github.com/R3dgrave/portafolio_v2",
       technologies: ["React", "Tailwind"],
     },
     {
@@ -48,7 +48,7 @@ const Projects = () => {
         "Adaptado a todos los dispositivos. Bettys’ Cakes Página web venta al público postres caseros, panel de administrador CRUD, React, Tailwind, Supabase, adaptado a todos los dispositivos",
       image: "/bettys-cake.webp",
       externalLink: "https://bettys-cake.vercel.app/",
-      githubLink: "https://github.com/juanpabon1/Tienda-Online",
+      githubLink: "https://github.com/R3dgrave/bettys_cake",
       technologies: ["React", "Tailwind", "Supabase"],
     },
   ];
@@ -88,12 +88,12 @@ const Projects = () => {
                             {project.title}
                           </h3>
                           <div className="flex flex-row items-center justify-center">
-                            <button className="btn btn-ghost">
+                            <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                               <Github className="h-5 w-5" />
-                            </button>
-                            <button className="btn btn-ghost ">
+                            </a>
+                            <a href={project.externalLink} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                               <ExternalLink className="h-5 w-5" />
-                            </button>
+                            </a>
                           </div>
                         </div>
                         <p className="card-description text-muted text-sm mb-2">

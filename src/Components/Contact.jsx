@@ -23,7 +23,8 @@ const Contact = () => {
       newErrors.email = "Ingrese un email válido";
     }
     if (!formData.asunto.trim()) newErrors.asunto = "El asunto es obligatorio";
-    if (!formData.mensaje.trim()) newErrors.mensaje = "El mensaje no puede estar vacío";
+    if (!formData.mensaje.trim())
+      newErrors.mensaje = "El mensaje no puede estar vacío";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -137,70 +138,92 @@ const Contact = () => {
             </AnimatedElement>
             <AnimatedElement
               animation="fade-up"
-              className="bg-card rounded-lg p-6 shadow-sm"
+              className="bg-card rounded-lg p-6"
             >
               <h3 className="text-xl font-bold mb-4">Envíame un mensaje</h3>
               <form className="space-y-4" onSubmit={sendEmail}>
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div className="space-y-2">
-              <label htmlFor="nombre" className="text-sm font-medium">Nombre</label>
-              <input
-                id="nombre"
-                value={formData.nombre}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border rounded-md"
-                placeholder="Tu nombre"
-              />
-              {errors.nombre && <p className="text-red-500 text-sm">{errors.nombre}</p>}
-            </div>
-            <div className="space-y-2">
-              <label htmlFor="email" className="text-sm font-medium">Email</label>
-              <input
-                id="email"
-                type="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border rounded-md"
-                placeholder="tu@email.com"
-              />
-              {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
-            </div>
-          </div>
-          <div className="space-y-2">
-            <label htmlFor="asunto" className="text-sm font-medium">Asunto</label>
-            <input
-              id="asunto"
-              value={formData.asunto}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-md"
-              placeholder="Asunto del mensaje"
-            />
-            {errors.asunto && <p className="text-red-500 text-sm">{errors.asunto}</p>}
-          </div>
-          <div className="space-y-2">
-            <label htmlFor="mensaje" className="text-sm font-medium">Mensaje</label>
-            <textarea
-              id="mensaje"
-              value={formData.mensaje}
-              onChange={handleChange}
-              className="w-full min-h-[120px] px-3 py-2 border rounded-md dark:bg-background"
-              placeholder="Tu mensaje..."
-            />
-            {errors.mensaje && <p className="text-red-500 text-sm">{errors.mensaje}</p>}
-          </div>
-          <button
-            type="submit"
-            className="btn btn-neutral w-full"
-            disabled={sending}
-          >
-            {sending ? "Enviando..." : "Enviar mensaje"}
-          </button>
-          {success !== null && (
-            <p className={`text-center mt-2 ${success ? "text-green-500" : "text-red-500"}`}>
-              {success ? "Mensaje enviado correctamente" : "Error al enviar el mensaje"}
-            </p>
-          )}
-        </form>
+                <div className="grid gap-4 sm:grid-cols-2 shadow-lg">
+                  <div className="space-y-2">
+                    <label htmlFor="nombre" className="text-sm font-medium">
+                      Nombre
+                    </label>
+                    <input
+                      id="nombre"
+                      value={formData.nombre}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2 border rounded-md dark:bg-background"
+                      placeholder="Tu nombre"
+                    />
+                    {errors.nombre && (
+                      <p className="text-red-500 text-sm">{errors.nombre}</p>
+                    )}
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="email" className="text-sm font-medium">
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2 border rounded-md dark:bg-background"
+                      placeholder="tu@email.com"
+                    />
+                    {errors.email && (
+                      <p className="text-red-500 text-sm">{errors.email}</p>
+                    )}
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="asunto" className="text-sm font-medium">
+                    Asunto
+                  </label>
+                  <input
+                    id="asunto"
+                    value={formData.asunto}
+                    onChange={handleChange}
+                    className="w-full px-3 py-2 border rounded-md dark:bg-background"
+                    placeholder="Asunto del mensaje"
+                  />
+                  {errors.asunto && (
+                    <p className="text-red-500 text-sm">{errors.asunto}</p>
+                  )}
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="mensaje" className="text-sm font-medium">
+                    Mensaje
+                  </label>
+                  <textarea
+                    id="mensaje"
+                    value={formData.mensaje}
+                    onChange={handleChange}
+                    className="w-full min-h-[120px] px-3 py-2 border rounded-md dark:bg-background"
+                    placeholder="Tu mensaje..."
+                  />
+                  {errors.mensaje && (
+                    <p className="text-red-500 text-sm">{errors.mensaje}</p>
+                  )}
+                </div>
+                <button
+                  type="submit"
+                  className="btn btn-neutral w-full"
+                  disabled={sending}
+                >
+                  {sending ? "Enviando..." : "Enviar mensaje"}
+                </button>
+                {success !== null && (
+                  <p
+                    className={`text-center mt-2 ${
+                      success ? "text-green-500" : "text-red-500"
+                    }`}
+                  >
+                    {success
+                      ? "Mensaje enviado correctamente"
+                      : "Error al enviar el mensaje"}
+                  </p>
+                )}
+              </form>
             </AnimatedElement>
           </div>
         </div>
