@@ -1,12 +1,35 @@
-# React + Vite
+# 🚀 Portafolio Web - Frontend Junior
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es mi portafolio web como programador Frontend Junior. Es completamente responsive, está desarrollado con tecnologías modernas para ofrecer una experiencia atractiva e interactiva.
 
-Currently, two official plugins are available:
+## 🛠 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
 
-## Expanding the ESLint configuration
+- Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- DaisyUI
+
+- Lucide-react
+
+- Framer Motion
+
+- EmailJS
+
+## 🎨 Características
+
+- Diseño moderno y responsivo.
+
+- Animaciones fluidas con Framer Motion.
+
+- Formulario de contacto funcional con EmailJS.
+
+- Sección de proyectos con tecnologías destacadas.
+
+- Tema visual atractivo gracias a Tailwind CSS + DaisyUI.
+
+## 📬 Contacto
+
+Si deseas contactarme, puedes hacerlo a través del formulario en mi portafolio o directamente en mis redes sociales.
+
+¡Gracias por visitar mi portafolio!
