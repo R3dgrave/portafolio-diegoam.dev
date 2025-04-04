@@ -14,25 +14,22 @@ const About = () => {
             <div className="h-1 w-20 bg-black dark:bg-white mx-auto mb-8" />
           </AnimatedElement>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <AnimatedElement
-              animation="slide-in-left"
-              className="space-y-6"
-            >
+            <AnimatedElement animation="slide-in-left" className="space-y-6">
               <p className="text-lg">
-                Mi nombre es Diego, tengo 26 años, mis pasatiempos e intereses
-                son ver series, jugar videojuegos y la programación y desarrollo
-                web en general. Estudie la carrera de Analista Programador,
-                tengo experiencia en hardware(armando, diagnosticando y
-                reparando ordenadores) y software. Durante mi formación descubrí
-                mi pasión por el desarrollo web mientras desarrollaba proyectos
-                personales y académicos y conforme fui adentrándome más en el
-                tema.
+                Mi nombre es Diego Abanto, tengo 26 años y estudié la carrera de
+                Analista Programador. Tengo experiencia en hardware (armando,
+                diagnosticando y reparando ordenadores) y software. Durante mi
+                formación descubrí mi pasión por el desarrollo web conforme fui
+                adentrándome más en el tema y mientras realizaba proyectos
+                personales y académicos. Mis pasatiempos e intereses son ver
+                series, jugar videojuegos y la programación y desarrollo web en
+                general.
               </p>
               <p className="text-lg">
-                Actualmente, busco empleo como desarrollador web Front-End, a la
-                par que sigo formándome día a día de manera autodidacta sobre
-                las tecnologías actuales y demandadas del mercado para siempre
-                estar a la vanguardia.
+                Actualmente, busco empleo como desarrollador web Front-End. A la
+                Front-End. A la par, sigo formándome día a día de manera
+                autónoma sobre las tecnologías actuales y mas demandadas del
+                mercado para siempre estar a la vanguardia.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
@@ -73,10 +70,7 @@ const About = () => {
                 </div>
               </div>
             </AnimatedElement>
-            <AnimatedElement
-              animation="slide-in-right"
-              className="relative"
-            >
+            <AnimatedElement animation="slide-in-right" className="relative">
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-primary/20 via-primary/0 to-primary/20 blur-xl opacity-50" />
               <img
                 src="/about-me.webp"
