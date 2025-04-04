@@ -100,7 +100,6 @@ const Hero = () => {
           <img
             src="/photo-me.webp"
             alt="Diego Abanto"
-            loading="lazy" 
             className="relative rounded-full object-cover border border-white/10 border-black shadow-lg shadow-gray-900/50 w-full h-full"
           />
         </AnimatedElement>

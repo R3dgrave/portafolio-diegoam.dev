@@ -92,7 +92,7 @@ const Contact = () => {
                   <h3 className="text-lg font-semibold mb-1">Email</h3>
                   <p className="text-muted text-xs md:text-base">{email}</p>
                   <button
-                    className="cursor-pointer mt-1 link link-hover"
+                    className="flex flex-start cursor-pointer mt-1 link link-hover"
                     onClick={copyToClipboard}
                   >
                     {copied ? "¡Copiado!" : "Copiar email"}
