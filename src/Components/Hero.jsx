@@ -107,11 +107,11 @@ const Hero = () => {
       <AnimatedElement
         animation="fade-up"
         delay={6}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
+        className="absolute bottom-0 md:bottom-10 md:left-1/2 -translate-x-1/2"
       >
         <a
           href="#sobre-mi"
-          className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors text-gray-500"
+          className="flex flex-col items-center text-muted hover:text-primary transition-colors text-gray-500"
         >
           <span className="text-sm mb-2">Descubre más</span>
           <ArrowDown className="h-5 w-5 animate-bounce" />
