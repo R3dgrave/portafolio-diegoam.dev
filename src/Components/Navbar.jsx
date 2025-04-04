@@ -35,7 +35,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container w-full mx-auto flex items-center justify-between h-16">
-        <Link to="#home" className="text-2xl font-bold">
+        <Link to="#inicio" className="text-lg font-bold">
           Portafolio
         </Link>
 

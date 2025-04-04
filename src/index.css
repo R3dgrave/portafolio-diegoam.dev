@@ -259,4 +259,9 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  font-display: swap;
+}
+
+.animated-element {
+  will-change: opacity, transform;
 }

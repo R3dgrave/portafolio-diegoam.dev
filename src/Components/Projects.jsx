@@ -79,6 +79,7 @@ const Projects = () => {
                         <img
                           src={project.image}
                           alt={project.title}
+                          loading="lazy" 
                           className="object-cover aspect-video w-full h-full transition-all duration-500 grayscale group-hover:grayscale-0 group-hover:scale-105"
                         />
                       </div>
@@ -88,10 +89,10 @@ const Projects = () => {
                             {project.title}
                           </h3>
                           <div className="flex flex-row items-center justify-center">
-                            <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+                            <a href={project.githubLink} aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                               <Github className="h-5 w-5" />
                             </a>
-                            <a href={project.externalLink} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+                            <a href={project.externalLink} aria-label="External Link" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                               <ExternalLink className="h-5 w-5" />
                             </a>
                           </div>

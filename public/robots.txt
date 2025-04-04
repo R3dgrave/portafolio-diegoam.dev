@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://diegoam-dev.vercel.app/sitemap.xml

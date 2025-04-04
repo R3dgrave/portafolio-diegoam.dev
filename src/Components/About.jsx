@@ -75,6 +75,7 @@ const About = () => {
               <img
                 src="/about-me.webp"
                 alt="Sobre mí"
+                loading="lazy" 
                 width={600}
                 height={400}
                 className="aspect-square rounded-xl object-cover border border-white/10 border-black shadow-lg shadow-gray-900/50"

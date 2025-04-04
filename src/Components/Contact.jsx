@@ -91,12 +91,12 @@ const Contact = () => {
                 <div className="flex flex-col gap-1">
                   <h3 className="text-lg font-semibold mb-1">Email</h3>
                   <p className="text-muted text-xs md:text-base">{email}</p>
-                  <a
+                  <button
                     className="cursor-pointer mt-1 link link-hover"
                     onClick={copyToClipboard}
                   >
                     {copied ? "¡Copiado!" : "Copiar email"}
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="flex items-start gap-4">
