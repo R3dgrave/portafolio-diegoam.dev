@@ -16,7 +16,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/diego-abanto-b42b81289/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-circle" size="icon">
               <Linkedin className="h-5 w-5" />
             </a>
-            <a href="mailto:diego.abantomendoza@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-circle" size="icon">
+            <a href="mailto:diegoabm.dev@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-circle" size="icon">
               <Mail className="h-5 w-5" />
             </a>
           </div>

@@ -11,7 +11,7 @@ import { AnimatedElement } from "../Components/AnimatedElement";
 
 const Hero = () => {
   const [copied, setCopied] = useState(false);
-  const email = "diego.abantomendoza@gmail.com";
+  const email = "diegoabm.dev@gmail.com";
   const heroRef = useRef(null);
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -83,7 +83,7 @@ const Hero = () => {
             <a href="https://www.linkedin.com/in/diego-abanto-b42b81289/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
               <Linkedin className="h-5 w-5" />
             </a>
-            <a href="mailto:diego.abantomendoza@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+            <a href="mailto:diegoabm.dev@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
               <Mail className="h-5 w-5" />
             </a>
           </AnimatedElement>

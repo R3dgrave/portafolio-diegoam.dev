@@ -60,7 +60,7 @@ const Contact = () => {
   };
 
   const [copied, setCopied] = useState(false);
-  const email = "diego.abantomendoza@gmail.com";
+  const email = "diegoabm.dev@gmail.com";
   const copyToClipboard = () => {
     navigator.clipboard.writeText(email);
     setCopied(true);
