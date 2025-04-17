@@ -63,9 +63,14 @@ const Hero = () => {
             delay={3}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <a href="https://drive.google.com/file/d/1NCw4PSy_QHCeYWtBP8JtSn6_5OEsymrx/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-neutral group flex items-center text-white dark:text-gray-200">
-              <Download  className="mr-2 h-4 w-4 transition-custom group-hover:-translate-y-1" />  
-              Ver CV  
+            <a
+              href="https://drive.google.com/file/d/1Xlj2FPDG1SZFUIF1bJvZ4VNQSdv6ruV_/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-neutral group flex items-center text-white dark:text-gray-200"
+            >
+              <Download className="mr-2 h-4 w-4 transition-custom group-hover:-translate-y-1" />
+              Ver CV
             </a>
             <button
               className="btn group flex items-center"
@@ -77,13 +82,31 @@ const Hero = () => {
           </AnimatedElement>
 
           <AnimatedElement animation="fade-up" delay={4} className="flex gap-4">
-            <a href="https://github.com/R3dgrave" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+            <a
+              href="https://github.com/R3dgrave"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-ghost"
+            >
               <Github className="h-5 w-5" />
             </a>
-            <a href="https://www.linkedin.com/in/diego-abanto-b42b81289/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+            <a
+              href="https://www.linkedin.com/in/diego-abanto-b42b81289/"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-ghost"
+            >
               <Linkedin className="h-5 w-5" />
             </a>
-            <a href="mailto:diegoabm.dev@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+            <a
+              href="mailto:diegoabm.dev@gmail.com"
+              aria-label="Email"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-ghost"
+            >
               <Mail className="h-5 w-5" />
             </a>
           </AnimatedElement>
