@@ -106,7 +106,7 @@ const Contact = () => {
                 <div className="flex flex-col gap-1">
                   <h3 className="text-lg font-semibold mb-1">LinkedIn</h3>
                   <p className="text-muted">
-                    linkedin.com/in/diego-abanto-b42b81289/
+                    linkedin.com/in/diego-abanto-mendoza/
                   </p>
                   <a
                     href="https://www.linkedin.com/in/diego-abanto-mendoza/"
