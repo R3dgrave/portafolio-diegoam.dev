@@ -92,7 +92,7 @@ const Hero = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/diego-abanto-b42b81289/"
+              href="https://www.linkedin.com/in/diego-abanto-mendoza/"
               aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"

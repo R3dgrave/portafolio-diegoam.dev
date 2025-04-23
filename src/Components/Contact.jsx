@@ -109,7 +109,7 @@ const Contact = () => {
                     linkedin.com/in/diego-abanto-b42b81289/
                   </p>
                   <a
-                    href="https://www.linkedin.com/in/diego-abanto-b42b81289/"
+                    href="https://www.linkedin.com/in/diego-abanto-mendoza/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cursor-pointer link link-hover mt-1"
