@@ -106,10 +106,10 @@ const Contact = () => {
                 <div className="flex flex-col gap-1">
                   <h3 className="text-lg font-semibold mb-1">LinkedIn</h3>
                   <p className="text-muted">
-                    linkedin.com/in/diego-abanto-mendoza/
+                    linkedin.com/in/diegoabantomendoza
                   </p>
                   <a
-                    href="https://www.linkedin.com/in/diego-abanto-mendoza/"
+                    href="https://www.linkedin.com/in/diegoabantomendoza"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cursor-pointer link link-hover mt-1"

@@ -64,7 +64,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="https://drive.google.com/file/d/1Xlj2FPDG1SZFUIF1bJvZ4VNQSdv6ruV_/view?usp=sharing"
+              href="https://drive.google.com/file/d/1c01TfHn0r3cNul0qPtzjanrZwgDQ8v0l/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-neutral group flex items-center text-white dark:text-gray-200"
@@ -92,7 +92,7 @@ const Hero = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/diego-abanto-mendoza/"
+              href="https://www.linkedin.com/in/diegoabantomendoza"
               aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
