@@ -5,15 +5,13 @@ import { AnimatedElement } from "../Components/AnimatedElement";
 const Projects = () => {
   const projects = [
     {
-      title: "Servicios Freelance",
+      title: "Bettys’ Cakes",
       description:
-        "Página desarrollada con React y Tailwind, componentes reutilizables, adaptado a todos los dispositivos",
-      image: "/Landing-page.webp",
-      externalLink:
-        "https://r3dgrave.github.io/landingpage-programadorfreelance/",
-      githubLink:
-        "https://github.com/R3dgrave/landingpage-programadorfreelance",
-      technologies: ["React", "Tailwind"],
+        "Adaptado a todos los dispositivos. Bettys’ Cakes Página web venta al público postres caseros, panel de administrador CRUD, React, Tailwind, Supabase, adaptado a todos los dispositivos",
+      image: "/bettys-cake.webp",
+      externalLink: "https://bettys-cake.vercel.app/",
+      githubLink: "https://github.com/R3dgrave/bettys_cake",
+      technologies: ["React", "Tailwind", "Supabase"],
     },
     {
       title: "YourNotebook",
@@ -25,13 +23,15 @@ const Projects = () => {
       technologies: ["React", "Tailwind"],
     },
     {
-      title: "Tienda Online",
+      title: "Servicios Freelance",
       description:
-        "Desarrollado con Angular 18, Node.js(Express.JS), MongoDB, Páginas(principal, productos, carrito de compras, lista de deseos, estado mi pedido, perfil). Panel de administrador CRUD(categorías, marcas, productos, pedidos). Adaptado a todos los dispositivos.",
-      image: "/E-commerce.webp",
-      externalLink: "https://e-commerce-frontend-teal-one.vercel.app//",
-      githubLink: "https://github.com/R3dgrave/E-Commerce-frontend",
-      technologies: ["Angular", "Node.js", "MongoDB", "Express.JS"],
+        "Página desarrollada con React y Tailwind, componentes reutilizables, adaptado a todos los dispositivos",
+      image: "/Landing-page.webp",
+      externalLink:
+        "https://r3dgrave.github.io/landingpage-programadorfreelance/",
+      githubLink:
+        "https://github.com/R3dgrave/landingpage-programadorfreelance",
+      technologies: ["React", "Tailwind"],
     },
     {
       title: "Portafolio v2",
@@ -41,15 +41,6 @@ const Projects = () => {
       externalLink: "https://r3dgrave.github.io/portafolio_v2/",
       githubLink: "https://github.com/R3dgrave/portafolio_v2",
       technologies: ["React", "Tailwind"],
-    },
-    {
-      title: "Bettys’ Cakes",
-      description:
-        "Adaptado a todos los dispositivos. Bettys’ Cakes Página web venta al público postres caseros, panel de administrador CRUD, React, Tailwind, Supabase, adaptado a todos los dispositivos",
-      image: "/bettys-cake.webp",
-      externalLink: "https://bettys-cake.vercel.app/",
-      githubLink: "https://github.com/R3dgrave/bettys_cake",
-      technologies: ["React", "Tailwind", "Supabase"],
     },
   ];
   const delay = 0;
@@ -70,16 +61,13 @@ const Projects = () => {
             <div className="mt-0">
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
-                  <AnimatedElement
-                    animation="fade-up"
-                    key={index}
-                  >
+                  <AnimatedElement animation="fade-up" key={index}>
                     <div className="card overflow-hidden group border border-gray-200 rounded-xl flex flex-col h-full transition-all duration-500 hover:shadow-lg hover:-translate-y-2">
                       <div className="relative overflow-hidden">
                         <img
                           src={project.image}
                           alt={project.title}
-                          loading="lazy" 
+                          loading="lazy"
                           className="object-cover aspect-video w-full h-full transition-all duration-500 grayscale group-hover:grayscale-0 group-hover:scale-105"
                         />
                       </div>
@@ -89,10 +77,22 @@ const Projects = () => {
                             {project.title}
                           </h3>
                           <div className="flex flex-row items-center justify-center">
-                            <a href={project.githubLink} aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+                            <a
+                              href={project.githubLink}
+                              aria-label="GitHub"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="btn btn-ghost"
+                            >
                               <Github className="h-5 w-5" />
                             </a>
-                            <a href={project.externalLink} aria-label="External Link" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+                            <a
+                              href={project.externalLink}
+                              aria-label="External Link"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="btn btn-ghost"
+                            >
                               <ExternalLink className="h-5 w-5" />
                             </a>
                           </div>
