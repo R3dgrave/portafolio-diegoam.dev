@@ -14,6 +14,15 @@ const Projects = () => {
       technologies: ["React", "Tailwind", "Supabase"],
     },
     {
+      title: "Dashboard Financiero Personal",
+      description:
+        "Desarrollado con React + TailwindCSS + Shadcn + LocalStorage, permite ingresar gastos e ingreso de dinero, se crea un grafico de gastos automaticamente, eliminar transacciones, cards para mostrar ingresos, gastos, balance.",
+      image: "/Finantial-Dashboard.webp",
+      externalLink: "https://github.com/R3dgrave/financial-dashboard/",
+      githubLink: "https://financial-dashboard-swart-one.vercel.app/",
+      technologies: ["React", "Tailwind, Shadcn"],
+    },
+    {
       title: "YourNotebook",
       description:
         "App de notas creada con React, editor de texto para personalizar las notas, organizar las notas vinculando con etiquetas, adaptado a todos los dispositivos.",
