@@ -41,7 +41,7 @@ const Experience = () => {
                   <div className="absolute -left-4 top-0 w-8 h-8 rounded-full bg-primary dark:bg-white border-2 border-white dark:border-zinc-900 flex items-center justify-center -translate-x-1/2">
                     <Briefcase size={16} className="text-white dark:text-zinc-900" />
                   </div>
-                  <div className="bg-white dark:bg-zinc-800 rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                  <div className="bg-white dark:bg-zinc-950 rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300">
                     <div className="flex flex-col md:flex-row md:justify-between mb-2">
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white">{item.position}</h3>
                       <span className="text-gray-500 dark:text-gray-400 text-sm mt-1 md:mt-0">{item.date}</span>

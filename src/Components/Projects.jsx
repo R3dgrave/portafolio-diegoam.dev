@@ -1,7 +1,6 @@
-// src/Components/Projects.jsx
 import React from "react";
 import { Link } from "react-router-dom"; // Importamos Link
-import { Github, ExternalLink, Code } from "lucide-react";
+import { Github, ExternalLink, Code, ArrowRight } from "lucide-react"; 
 import { AnimatedElement } from "../Components/AnimatedElement";
 import { SiReact, SiTailwindcss, SiSupabase, SiShadcnui, SiNodedotjs, SiExpress } from "react-icons/si";
 
@@ -60,15 +59,21 @@ const Projects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <AnimatedElement animation="fade-up" key={project.id}>
-              <Link to={`/proyectos/${project.id}`}> {/* Ahora usa Link */}
+              <Link to={`/proyectos/${project.id}`}>
                 <div
-                  className="relative rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-zinc-700 cursor-pointer group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white dark:bg-zinc-800 flex flex-col h-full"
+                  className="relative rounded-xl overflow-hidden shadow-lg group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white dark:bg-zinc-950 flex flex-col h-full cursor-pointer"
                 >
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
+                  {/* Overlay con el aviso "Ver detalles" */}
+                  <div className="absolute inset-0 bg-[#0a4c91]/80 dark:bg-[#00BAFE]/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span className="text-white text-lg font-semibold flex items-center gap-2">
+                      Ver detalles <ArrowRight size={20} />
+                    </span>
+                  </div>
                   <div className="p-6 flex flex-col justify-between flex-grow">
                     <div>
                       <h3 className="text-xl font-semibold mb-2">

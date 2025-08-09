@@ -111,8 +111,8 @@ const projectsData = {
               Resumen Financiero
             </span>
             <p className="pt-4 text-gray-700 dark:text-gray-300">
-              Visualización en tiempo real del balance total, ingresos y
-              gastos totales.
+              Visualización en tiempo real del balance total, ingresos y gastos
+              totales.
             </p>
             <div className="my-4 flex justify-center">
               <img
@@ -129,9 +129,8 @@ const projectsData = {
             </span>
             <p className="pt-4 text-gray-700 dark:text-gray-300">
               Un gráfico de pastel (<CodeHighlight>PieChart</CodeHighlight> de
-              Recharts) que muestra la distribución de los gastos por
-              categoría, lo que facilita identificar en qué áreas se está
-              gastando más.
+              Recharts) que muestra la distribución de los gastos por categoría,
+              lo que facilita identificar en qué áreas se está gastando más.
             </p>
             <div className="my-4 flex justify-center">
               <img
@@ -184,15 +183,17 @@ const projectsData = {
             El proyecto se construyó con un enfoque en la eficiencia y una
             experiencia de usuario moderna.
           </p>
-          <ul className="list-disc list-inside mt-4 space-y-2">
+          <ul className="list-disc list-inside mt-4 ml-3 space-y-2">
             <li>
-              Frontend: La interfaz de usuario fue desarrollada con React y
-              TypeScript. Para el diseño, se usó Tailwind CSS y Shadcn UI, una
-              librería de componentes reutilizables que aceleró el desarrollo.
-              La visualización de datos se implementó con Recharts.
+              <span className="font-bold">Frontend: </span>La interfaz de
+              usuario fue desarrollada con React y TypeScript. Para el diseño,
+              se usó Tailwind CSS y Shadcn UI, una librería de componentes
+              reutilizables que aceleró el desarrollo. La visualización de datos
+              se implementó con Recharts.
             </li>
             <li>
-              Hooks Personalizados: Se crearon hooks personalizados como
+              <span className="font-bold">Hooks Personalizados: </span>Se
+              crearon hooks personalizados como
               <CodeHighlight>useTransactions</CodeHighlight>,
               <CodeHighlight>useFinancialSummary</CodeHighlight>, y
               <CodeHighlight>useLocalStorage</CodeHighlight> para centralizar la
@@ -200,8 +201,9 @@ const projectsData = {
               datos, siguiendo las mejores prácticas de React.
             </li>
             <li>
-              Arquitectura: El estado de la aplicación se maneja directamente en
-              React. La persistencia de datos en el
+              <span className="font-bold">Arquitectura: </span>El estado de la
+              aplicación se maneja directamente en React. La persistencia de
+              datos en el
               <CodeHighlight>localStorage</CodeHighlight> del navegador elimina
               la necesidad de un backend externo, lo que simplifica la
               arquitectura.
@@ -215,27 +217,31 @@ const projectsData = {
             Durante el desarrollo de este proyecto, se obtuvieron valiosos
             aprendizajes y se superaron varios desafíos:
           </p>
-          <ul className="list-disc list-inside mt-4 space-y-2">
+          <ul className="list-disc list-inside mt-4 ml-3 space-y-2">
             <li>
-              Integración de librerías de UI: Aprendí a integrar librerías
-              modernas como Shadcn con Tailwind para crear componentes elegantes
-              y funcionales de forma rápida.
+              <span className="font-bold">
+                Integración de librerías de UI:{" "}
+              </span>
+              Aprendí a integrar librerías modernas como Shadcn con Tailwind
+              para crear componentes elegantes y funcionales de forma rápida.
             </li>
             <li>
-              Gestión de estado y persistencia: Me familiaricé con el manejo
-              eficiente del estado de React y la implementación de la
-              persistencia de datos usando{" "}
+              <span className="font-bold">
+                Gestión de estado y persistencia:{" "}
+              </span>
+              Me familiaricé con el manejo eficiente del estado de React y la
+              implementación de la persistencia de datos usando{" "}
               <CodeHighlight>localStorage</CodeHighlight>.
             </li>
             <li>
-              Visualización de datos: Implementé visualizaciones claras y
-              comprensibles con Recharts para representar la información
-              financiera de manera efectiva.
+              <span className="font-bold">Visualización de datos: </span>
+              Implementé visualizaciones claras y comprensibles con Recharts
+              para representar la información financiera de manera efectiva.
             </li>
             <li>
-              Desarrollo con TypeScript: La utilización de TypeScript mejoró la
-              calidad del código, haciéndolo más robusto y fácil de mantener a
-              largo plazo.
+              <span className="font-bold">Desarrollo con TypeScript: </span>La
+              utilización de TypeScript mejoró la calidad del código, haciéndolo
+              más robusto y fácil de mantener a largo plazo.
             </li>
           </ul>
         </div>
@@ -255,7 +261,7 @@ const projectsData = {
       "Tailwind",
     ],
     externalLink: "#",
-    githubLink: "https://github.com/tu-usuario/proyecto-medico", // Reemplaza con tu URL
+    githubLink: "https://github.com/tu-usuario/proyecto-medico",
     sections: [
       { id: "overview", title: "Visión General" },
       { id: "backend", title: "Backend (API REST)" },
@@ -376,7 +382,10 @@ const ProjectDetailPage = () => {
       for (let i = project.sections.length - 1; i >= 0; i--) {
         const section = project.sections[i];
         const element = document.getElementById(section.id);
-        if (element && element.getBoundingClientRect().top <= window.innerHeight / 2) {
+        if (
+          element &&
+          element.getBoundingClientRect().top <= window.innerHeight / 2
+        ) {
           currentActive = section.id;
           break;
         }
