@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-background dark:bg-zinc-900 text-black dark:text-white transition-colors">
         <Navbar />
         <main>
           <Hero heroRef={heroRef} heroStyle={heroStyle} />
