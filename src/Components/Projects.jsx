@@ -68,14 +68,14 @@ const ProjectModal = ({ project, onClose }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={onClose}
-          className="modal-container bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 transition-opacity"
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 transition-opacity"
         >
           <motion.div
             initial={{ scale: 0.9, y: 50 }}
             animate={{ scale: 1, y: 0 }}
             exit={{ scale: 0.9, y: 50 }}
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-4xl bg-white dark:bg-zinc-900 rounded-lg shadow-xl p-6 md:p-8 transform transition-transform"
+            className="relative w-full max-w-4xl bg-white dark:bg-zinc-900 rounded-lg shadow-xl p-6 md:p-8 transform transition-transform overflow-y-auto max-h-[90vh]"
           >
             <button
               onClick={onClose}
