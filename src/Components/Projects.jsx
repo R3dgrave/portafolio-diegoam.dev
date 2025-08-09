@@ -68,7 +68,7 @@ const ProjectModal = ({ project, onClose }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={onClose}
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 overflow-y-auto transition-opacity"
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 overflow-y-auto transition-opacity h-[100dvh]"
         >
           <motion.div
             initial={{ scale: 0.9, y: 50 }}
