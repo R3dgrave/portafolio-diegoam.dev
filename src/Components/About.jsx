@@ -30,7 +30,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <AnimatedElement animation="slide-in-left" className="space-y-6">
               <p className="text-md text-gray-700 dark:text-gray-300">
-                Soy Diego, un Analista Programador de 26 años con experiencia tanto en hardware como en software. Mi verdadera pasión es el desarrollo web, la cual descubrí a través de proyectos personales y académicos. Actualmente, me enfoco en el desarrollo Front-End y me mantengo en constante formación para estar siempre a la vanguardia de las tecnologías del mercado. En mi tiempo libre, disfruto de los videojuegos y las series.
+                Soy Diego Abanto, un Analista Programador de 26 años con experiencia tanto en hardware como en software. Mi verdadera pasión es el desarrollo web, la cual descubrí a través de proyectos personales y académicos. Actualmente, me enfoco en el desarrollo Front-End y me mantengo en constante formación para estar siempre a la vanguardia de las tecnologías del mercado. En mi tiempo libre, disfruto de los videojuegos y las series.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
