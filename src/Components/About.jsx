@@ -14,6 +14,7 @@ import {
   SiGithub,
   SiVercel,
 } from "react-icons/si";
+import { User } from "lucide-react";
 
 const About = () => {
   return (
@@ -24,7 +25,10 @@ const About = () => {
             animation="fade-up"
             className="max-w-3xl mx-auto text-center mb-16"
           >
-            <h2 className="text-3xl font-bold mb-4">Sobre Mí</h2>
+            <h2 className="text-3xl font-bold mb-4 flex justify-center items-center gap-4">
+              <User size={32} className="text-primary dark:text-white"/>
+              Sobre Mí
+            </h2>
             <div className="h-1 w-20 bg-primary mx-auto mb-8" />
           </AnimatedElement>
           <div className="grid md:grid-cols-2 gap-12 items-center">

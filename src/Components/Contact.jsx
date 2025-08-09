@@ -23,7 +23,10 @@ const Contact = () => {
             animation="fade-up"
             className="max-w-3xl mx-auto text-center mb-16"
           >
-            <h2 className="text-3xl font-bold mb-4">Contacto</h2>
+            <h2 className="text-3xl font-bold mb-4 flex justify-center items-center gap-4">
+              <Mail size={32} className="text-primary dark:text-white" />
+              Contacto
+            </h2>
             <div className="h-1 w-20 bg-primary mx-auto mb-8" />
             <p className="text-gray-600 dark:text-gray-400">
               ¿Interesado en trabajar juntos? Contáctame a través de los
@@ -31,10 +34,7 @@ const Contact = () => {
             </p>
           </AnimatedElement>
           <div className="w-full flex justify-center">
-            <AnimatedElement
-              animation="fade-up"
-              className="space-y-8 p-6"
-            >
+            <AnimatedElement animation="fade-up" className="space-y-8 p-6">
               <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">
                 Información de Contacto
               </h3>

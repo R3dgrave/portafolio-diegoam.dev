@@ -58,8 +58,8 @@ const Hero = () => {
       >
         <div className="space-y-6">
           <AnimatedElement animation="fade-up">
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-              Hola, soy Diego Abanto
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight pb-4">
+              Hola, soy <br /><span className="text-[#0a4c91] dark:text-[#00BAFE]">Diego Abanto</span>
             </h1>
             <p className="text-xl dark:text-gray-200">
               Desarrollador Web Frontend Junior
@@ -77,9 +77,9 @@ const Hero = () => {
               href="https://drive.google.com/file/d/1c01TfHn0r3cNul0qPtzjanrZwgDQ8v0l/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary text-black dark:text-white group flex items-center"
+              className="btn bg-[#0a4c91] dark:bg-[#00BAFE] text-white group flex items-center border-none"
             >
-              <Download className="text-black dark:text-white mr-2 h-4 w-4 transition-custom group-hover:-translate-y-1" />
+              <Download className="text-white mr-2 h-4 w-4 transition-custom group-hover:-translate-y-1" />
               Ver CV
             </a>
             <button
@@ -97,7 +97,7 @@ const Hero = () => {
               aria-label="GitHub"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-ghost hover:text-black transition-colors"
+              className="btn btn-ghost hover:bg-[#0a4c91] hover:dark:bg-[#00BAFE] hover:text-white transition-colors border-none"
             >
               <Github className="h-6 w-6" />
             </a>
@@ -106,7 +106,7 @@ const Hero = () => {
               aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-ghost hover:text-black transition-colors"
+              className="btn btn-ghost hover:bg-[#0a4c91] hover:dark:bg-[#00BAFE] hover:text-white transition-colors border-none"
             >
               <Linkedin className="h-6 w-6" />
             </a>
@@ -115,7 +115,7 @@ const Hero = () => {
               aria-label="Email"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-ghost hover:text-black transition-colors"
+              className="btn btn-ghost hover:bg-[#0a4c91] hover:dark:bg-[#00BAFE] hover:text-white transition-colors border-none"
             >
               <Mail className="h-6 w-6" />
             </a>

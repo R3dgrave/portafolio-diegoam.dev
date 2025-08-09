@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
@@ -8,6 +9,7 @@ import Education from "./Components/Education";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import ProjectDetailPage from "./Components/ProjectDetailPage";
 
 function App() {
   const heroRef = useRef(null)
@@ -32,18 +34,27 @@ function App() {
 
   return (
     <>
+      <Router>
       <div className="w-full min-h-screen bg-background dark:bg-zinc-900 text-black dark:text-white transition-colors">
         <Navbar />
         <main>
-          <Hero heroRef={heroRef} heroStyle={heroStyle} />
-          <About/>
-          <Experience />
-          <Education />
-          <Projects />
-          <Contact />
-          <Footer />
+          <Routes>
+            <Route path="/" element={
+              <>
+                <Hero heroRef={heroRef} heroStyle={heroStyle} />
+                <About/>
+                <Experience />
+                <Education />
+                <Projects />
+                <Contact />
+              </>
+            } />
+            <Route path="/proyectos/:projectId" element={<ProjectDetailPage />} />
+          </Routes>
         </main>
+        <Footer />
       </div>
+    </Router>
     </>
   );
 }
