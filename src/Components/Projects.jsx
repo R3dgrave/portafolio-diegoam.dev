@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Importamos Link
-import { Github, ExternalLink, Code, ArrowRight } from "lucide-react"; 
+import { Github, ExternalLink, Code, ArrowRight } from "lucide-react";
 import { AnimatedElement } from "../Components/AnimatedElement";
-import { SiReact, SiTailwindcss, SiSupabase, SiShadcnui, SiNodedotjs, SiExpress } from "react-icons/si";
+import {
+  SiReact,
+  SiTailwindcss,
+  SiSupabase,
+  SiShadcnui,
+  SiNodedotjs,
+  SiExpress,
+} from "react-icons/si";
 
 // Define un nuevo icono para Node.js y Express
 const techIcons = {
@@ -16,36 +23,44 @@ const techIcons = {
 
 const projects = [
   {
-    title: "Bettys Cakes",
-    id: "bettys-cakes",
-    description:
-      "Página web responsiva para una pastelería, con un panel de administrador CRUD para gestionar productos y pedidos. Desarrollada con React, Tailwind CSS y Supabase.",
-    image: "/bettys_cake_1.png",
-    technologies: ["React", "Tailwind", "Supabase"],
-  },
-  {
     title: "Dashboard Financiero Personal",
     id: "financial-dashboard",
     description:
       "Un dashboard personal para el seguimiento de finanzas, construido con React y TailwindCSS. Permite registrar ingresos y gastos y gestionar transacciones.",
-    image: "/Finantial-Dashboard.webp",
+    image: "/dashboardfinanciero/fd-ui.webp",
     technologies: ["React", "Tailwind", "Shadcn"],
   },
   {
     title: "Sistema Médico",
-    id: "sistema-medico", // Nuevo ID para el proyecto
+    id: "sistema-medico",
     description:
       "Sistema de gestión integral para consultorios médicos, con un robusto backend y una interfaz de usuario moderna.",
-    image: "/Medical-System.webp", // Agrega una imagen para la card
+    image: "/sistemamedico/smedico_login_1.webp",
     technologies: ["React", "NodeJS", "ExpressJS", "Tailwind"],
+  },
+  {
+    title: "Tienda Postres",
+    id: "bettys-cakes",
+    description:
+      "Página web responsiva para una pastelería, con un panel de administrador CRUD para gestionar productos y pedidos. Desarrollada con React, Tailwind CSS y Supabase.",
+    image: "/tiendapostres/bettys_cake_1.webp",
+    technologies: ["React", "Tailwind", "Supabase"],
   },
 ];
 
 const Projects = () => {
   return (
-    <section id="proyectos" title="Proyectos" className="py-20 dark:bg-zinc-900 dark:text-white transition-colors">
+    <section
+      id="proyectos"
+      title="Proyectos"
+      className="py-20 dark:bg-zinc-900 dark:text-white transition-colors"
+    >
       <div className="container mx-auto px-4">
-        <AnimatedElement delay={0} animation="fade-up" className="max-w-3xl mx-auto text-center mb-16">
+        <AnimatedElement
+          delay={0}
+          animation="fade-up"
+          className="max-w-3xl mx-auto text-center mb-16"
+        >
           <h2 className="text-3xl font-bold mb-4 flex justify-center items-center gap-4">
             <Code size={32} className="text-primary dark:text-white" />
             Proyectos
@@ -60,9 +75,7 @@ const Projects = () => {
           {projects.map((project) => (
             <AnimatedElement animation="fade-up" key={project.id}>
               <Link to={`/proyectos/${project.id}`}>
-                <div
-                  className="relative rounded-xl overflow-hidden shadow-lg group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white dark:bg-zinc-950 flex flex-col h-full cursor-pointer"
-                >
+                <div className="relative rounded-xl overflow-hidden shadow-lg group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white dark:bg-zinc-950 flex flex-col h-full cursor-pointer">
                   <img
                     src={project.image}
                     alt={project.title}

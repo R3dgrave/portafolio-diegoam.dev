@@ -25,8 +25,8 @@ const About = () => {
             animation="fade-up"
             className="max-w-3xl mx-auto text-center mb-16"
           >
-            <h2 className="text-3xl font-bold mb-4 flex justify-center items-center gap-4">
-              <User size={32} className="text-primary dark:text-white"/>
+            <h2 className="text-[#0a4c91] dark:text-[#00BAFE] text-3xl font-bold mb-4 flex justify-center items-center gap-4">
+              <User size={32} className="text-[#0a4c91] dark:text-[#00BAFE]"/>
               Sobre Mí
             </h2>
             <div className="h-1 w-20 bg-primary mx-auto mb-8" />
