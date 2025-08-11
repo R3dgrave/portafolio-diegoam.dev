@@ -28,8 +28,8 @@ const Experience = () => {
       <section id="experiencia" className="py-20 bg-white dark:bg-zinc-900 dark:text-white transition-colors">
         <div className="container mx-auto px-4">
           <AnimatedElement animation="fade-up" className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-[#0a4c91] dark:text-[#00BAFE] text-3xl font-bold mb-4 flex justify-center items-center gap-4">
-              <Briefcase size={32} className="text-[#0a4c91] dark:text-[#00BAFE]" />
+            <h2 className="text-3xl font-bold mb-4 flex justify-center items-center gap-4">
+              <Briefcase size={32} className="text-primary dark:text-white" />
               Experiencia Laboral
             </h2>
             <div className="h-1 w-20 bg-black dark:bg-white mx-auto mb-8" />

@@ -138,7 +138,7 @@ const Hero = () => {
           className="relative aspect-square max-w-lg mx-auto"
         >
                     {/* Efecto de resplandor */}
-          <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-3xl opacity-50" />
+          <div className="absolute inset-0 rounded-full bg-blue-800 dark:bg-sky-500/65 blur-3xl opacity-50" />
                     {/* Imagen con sombra y bordes dobles */}
           <img
             src="/photo-me.webp"
