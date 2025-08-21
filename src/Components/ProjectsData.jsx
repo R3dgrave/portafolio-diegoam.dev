@@ -999,10 +999,10 @@ export const projectsData = {
     description:
       "",
     technologies: ["React", "Tailwind", "Supabase"],
-    externalLink: "https://bettys-cake.vercel.app/",
+    externalLink: "https://tiendapostres-ui.vercel.app/",
     githubLink: [
       {
-        enlace: "https://github.com/R3dgrave/bettys_cake",
+        enlace: "https://github.com/R3dgrave/tiendapostres-ui",
         name: "Frontend",
       },
     ],
@@ -1059,6 +1059,20 @@ export const projectsData = {
           <div className="my-4 flex justify-center">
             <ZoomableImage
               src="/tiendapostres/bettys_cake_3.webp"
+              alt="Captura de pantalla de la interfaz"
+              className="w-[80%] rounded-lg shadow-md"
+            />
+          </div>
+          <div className="my-4 flex justify-center">
+            <ZoomableImage
+              src="/tiendapostres/bettys_cake_4.webp"
+              alt="Captura de pantalla de la interfaz"
+              className="w-[80%] rounded-lg shadow-md"
+            />
+          </div>
+          <div className="my-4 flex justify-center">
+            <ZoomableImage
+              src="/tiendapostres/bettys_cake_5.webp"
               alt="Captura de pantalla de la interfaz"
               className="w-[80%] rounded-lg shadow-md"
             />
