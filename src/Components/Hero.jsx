@@ -60,7 +60,7 @@ const Hero = () => {
         <div className="space-y-6">
           <AnimatedElement animation="fade-up">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight pb-4">
-                            Hola, soy <br />
+              Hola, soy <br />
               <span className="text-[#0a4c91] dark:text-[#00BAFE]">
                 Diego Abanto
               </span>
@@ -78,7 +78,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="https://drive.google.com/file/d/1c01TfHn0r3cNul0qPtzjanrZwgDQ8v0l/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Yvcnp23ueUZqO8GBcjVlRyruX88VtMO5/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="btn bg-[#0a4c91] dark:bg-[#00BAFE] text-white group flex items-center border-none"
@@ -91,7 +91,7 @@ const Hero = () => {
               onClick={copyToClipboard}
             >
               {copied ? "¡Copiado!" : email}
-              <Copy className="ml-2 h-4 w-4" /> 
+              <Copy className="ml-2 h-4 w-4" />
             </button>
           </AnimatedElement>
 
@@ -107,7 +107,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="btn btn-ghost hover:bg-[#0a4c91] hover:dark:bg-[#00BAFE] hover:text-white transition-colors border-none"
             >
-              <Github className="h-6 w-6" /> 
+              <Github className="h-6 w-6" />
             </a>
 
             <a
@@ -137,9 +137,9 @@ const Hero = () => {
           delay={0.6}
           className="relative aspect-square max-w-lg mx-auto"
         >
-                    {/* Efecto de resplandor */}
+          {/* Efecto de resplandor */}
           <div className="absolute inset-0 rounded-full bg-blue-800 dark:bg-sky-500/65 blur-3xl opacity-50" />
-                    {/* Imagen con sombra y bordes dobles */}
+          {/* Imagen con sombra y bordes dobles */}
           <img
             src="/photo-me.webp"
             alt="Diego Abanto"
@@ -155,7 +155,7 @@ const Hero = () => {
             className="flex flex-col items-center hover:text-primary transition-colors text-black dark:text-gray-200"
           >
             <span className="text-sm mb-2">Descubre más</span>
-            <ArrowDown className="h-5 w-5 animate-bounce" />       
+            <ArrowDown className="h-5 w-5 animate-bounce" />
           </a>
         </AnimatedElement>
       </div>
