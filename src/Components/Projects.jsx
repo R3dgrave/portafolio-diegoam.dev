@@ -53,7 +53,7 @@ const Projects = () => {
     <section
       id="proyectos"
       title="Proyectos"
-      className="py-20 dark:bg-zinc-900 dark:text-white transition-colors"
+      className="py-20 dark:bg-zinc-950 dark:text-white transition-colors"
     >
       <div className="container mx-auto px-4">
         <AnimatedElement
@@ -75,7 +75,7 @@ const Projects = () => {
           {projects.map((project) => (
             <AnimatedElement animation="fade-up" key={project.id}>
               <Link to={`/proyectos/${project.id}`}>
-                <div className="relative rounded-xl overflow-hidden shadow-lg group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white dark:bg-zinc-950 flex flex-col h-full cursor-pointer">
+                <div className="relative rounded-xl overflow-hidden shadow-lg group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white dark:bg-zinc-900 flex flex-col h-full cursor-pointer">
                   <img
                     src={project.image}
                     alt={project.title}

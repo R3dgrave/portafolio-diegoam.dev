@@ -16,7 +16,7 @@ const Contact = () => {
     <>
       <section
         id="contacto"
-        className="py-20 bg-gray-100 dark:bg-zinc-950 dark:text-white transition-colors"
+        className="py-20 bg-gray-100 dark:bg-zinc-900 dark:text-white transition-colors"
       >
         <div className="container mx-auto px-4">
           <AnimatedElement

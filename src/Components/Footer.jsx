@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 const Footer = () => {
   return (
     <>
-      <footer className="py-4">
+      <footer className="py-4 dark:bg-zinc-950 dark:text-white transition-colors">
         <div className="container flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground">
             © {new Date().getFullYear()} Diego Abanto.

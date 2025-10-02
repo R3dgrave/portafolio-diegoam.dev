@@ -1,7 +1,7 @@
 // src/Components/Education.jsx
 import React from "react";
 import { AnimatedElement } from "./AnimatedElement";
-import { GraduationCap } from "lucide-react"; // Importamos el icono de gorro de graduación
+import { GraduationCap } from "lucide-react";
 
 const Education = () => {
   const education = [

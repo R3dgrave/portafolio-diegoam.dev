@@ -23,8 +23,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Inicio", href: "/#inicio" },
     { name: "Sobre mí", href: "/#sobre-mi" },
-    { name: "Experiencia", href: "/#experiencia" },
-    { name: "Educación", href: "/#educacion" },
+    { name: "Resumen", href: "/#resumen" },
     { name: "Proyectos", href: "/#proyectos" },
     { name: "Contacto", href: "/#contacto" },
   ];

@@ -6,6 +6,7 @@ import Hero from "./Components/Hero";
 import About from "./Components/About";
 import Experience from "./Components/Experience";
 import Education from "./Components/Education";
+import Resume from "./Components/Resume";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
@@ -43,8 +44,7 @@ function App() {
               <>
                 <Hero heroRef={heroRef} heroStyle={heroStyle} />
                 <About/>
-                <Experience />
-                <Education />
+                <Resume/>
                 <Projects />
                 <Contact />
               </>

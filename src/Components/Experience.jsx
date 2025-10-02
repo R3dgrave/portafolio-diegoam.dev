@@ -1,7 +1,7 @@
 // src/Components/Experience.jsx
 import React from "react";
 import { AnimatedElement } from "./AnimatedElement";
-import { Briefcase } from "lucide-react"; // Importamos el icono de maletín
+import { Briefcase } from "lucide-react";
 
 const Experience = () => {
   const experience = [
