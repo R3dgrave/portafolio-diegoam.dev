@@ -996,8 +996,7 @@ export const projectsData = {
   },
   "bettys-cakes": {
     title: "Tienda Postres caseros",
-    description:
-      "",
+    description: "",
     technologies: ["React", "Tailwind", "Supabase"],
     externalLink: "https://tiendapostres-ui.vercel.app/",
     githubLink: [
@@ -1051,10 +1050,9 @@ export const projectsData = {
       "tech-stack": (
         <div>
           <p>
-            El proyecto fue desarrollado con React para el frontend,
-            Tailwind CSS para los estilos y Supabase como
-            backend-as-a-service, que maneja la base de datos y la
-            autenticación.
+            El proyecto fue desarrollado con React para el frontend, Tailwind
+            CSS para los estilos y Supabase como backend-as-a-service, que
+            maneja la base de datos y la autenticación.
           </p>
           <div className="my-4 flex justify-center">
             <ZoomableImage
@@ -1077,6 +1075,506 @@ export const projectsData = {
               className="w-[80%] rounded-lg shadow-md"
             />
           </div>
+        </div>
+      ),
+    },
+  },
+  "currency-converter": {
+    title: "Proyecto Conversor de Monedas",
+    description:
+      "Aplicación web que permite convertir entre diferentes monedas utilizando tasas de cambio en tiempo real, con gráficos generados por la librería Chart.js. Ideal para aprender sobre consumo de APIs y manipulación del DOM con Vanilla JavaScript.",
+    technologies: ["Html5", "Css3", "Javascript"],
+    externalLink: "https://r3dgrave.github.io/Conversor-de-monedas-USD-EUR/",
+    githubLink: [
+      {
+        enlace: "https://github.com/R3dgrave/Conversor-de-monedas-USD-EUR",
+        name: "Ver Código",
+      },
+    ],
+    sections: [
+      { id: "overview", title: "Visión General" },
+      { id: "features", title: "Características Principales" },
+      { id: "tech-stack", title: "Tecnología Utilizada" },
+    ],
+    content: {
+      overview: (
+        <div>
+          <p>
+            Este proyecto es una aplicación de **conversión de monedas** que
+            obtiene las tasas de cambio en tiempo real mediante el consumo de
+            una API externa. Fue desarrollado con **HTML, CSS y JavaScript
+            puro** (Vanilla JS) para demostrar habilidades en la manipulación
+            del DOM y peticiones asíncronas.
+          </p>
+          <p className="mt-4">
+            Además de la conversión, se integra la librería **Chart.js** para
+            visualizar las tendencias históricas de las monedas seleccionadas en
+            un gráfico interactivo.
+          </p>
+        </div>
+      ),
+      features: (
+        <div className="space-y-6">
+          <div className="bg-gray-100 dark:bg-[#1E293B] p-6 rounded-xl border border-gray-200 dark:border-slate-700 shadow-sm transition-colors">
+            <span className="text-xl font-bold text-[#0a4c91] dark:text-[#00BAFE]">
+              Conversión en Tiempo Real
+            </span>
+            <p className="pt-4 text-gray-700 dark:text-gray-300">
+              Permite a los usuarios seleccionar dos monedas y obtener la
+              conversión instantánea basada en las tasas de cambio más
+              recientes.
+            </p>
+            <div className="my-4 flex justify-center">
+              <ZoomableImage
+                src="/conversorMoneda/conversor.webp"
+                alt="Captura de pantalla del conversor de monedas"
+                className="w-[100%] rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+          <div className="bg-gray-100 dark:bg-[#1E293B] p-6 rounded-xl border border-gray-200 dark:border-slate-700 shadow-sm transition-colors">
+            <span className="text-xl font-bold text-[#0a4c91] dark:text-[#00BAFE]">
+              Gráficos Históricos (Chart.js)
+            </span>
+            <p className="pt-4 text-gray-700 dark:text-gray-300">
+              Muestra un gráfico de líneas que ilustra el comportamiento de la
+              tasa de cambio a lo largo del tiempo, utilizando la popular
+              librería **Chart.js**.
+            </p>
+            <div className="my-4 flex justify-center">
+              <ZoomableImage
+                src="/conversorMoneda/conversor-chart.webp"
+                alt="Gráfico de Chart.js en el conversor"
+                className="w-[100%] rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+        </div>
+      ),
+      "tech-stack": (
+        <div>
+          <p>
+            El proyecto se enfoca en el uso de herramientas fundamentales del
+            desarrollo web:
+          </p>
+          <ul className="list-disc list-inside mt-4 ml-2 space-y-2">
+            <li>
+              <span className="font-bold">Front-end: </span> Desarrollado
+              completamente con **HTML, CSS y JavaScript**.
+            </li>
+            <li>
+              <span className="font-bold">Consumo de API: </span> Se utiliza
+              <CodeHighlight>fetch API</CodeHighlight> de JavaScript para
+              realizar peticiones asíncronas a una API de tasas de cambio.
+            </li>
+            <li>
+              <span className="font-bold">Visualización: </span> **Chart.js**
+              permite generar gráficos interactivos de forma sencilla.
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+  },
+
+  "Development-Services": {
+    title: "Servicios de Desarrollo web Profesional",
+    description:
+      "Página web promocional para servicios de desarrollo web, destacando habilidades y proyectos. Construida con el framework moderno Astro para un rendimiento ultrarrápido y SEO optimizado.",
+    technologies: ["Astro", "Tailwind", "Typescript"],
+    externalLink: "https://redgravecode.vercel.app/",
+    githubLink: [
+      {
+        enlace: "https://github.com/R3dgrave/diegoamcode",
+        name: "Ver Código",
+      },
+    ],
+    sections: [
+      { id: "overview", title: "Visión General" },
+      { id: "performance", title: "Rendimiento y Astro" },
+      { id: "tech-stack", title: "Tecnologías y Diseño" },
+    ],
+    content: {
+      overview: (
+        <div>
+          <p>
+            Este sitio web sirve como **carta de presentación profesional** para
+            servicios de desarrollo web. Su principal objetivo es mostrar mi
+            experiencia, habilidades y portafolio de manera clara y profesional.
+          </p>
+          <p className="mt-4">
+            Se priorizó la **velocidad de carga y la optimización SEO** para
+            asegurar un alto rendimiento. La arquitectura del proyecto permite
+            una fácil actualización y mantenimiento del contenido.
+          </p>
+          <div className="my-4 flex justify-center">
+            <ZoomableImage
+              src="/developmentService/service.webp"
+              alt="Captura de la landing page de servicios de desarrollo"
+              className="w-[100%] rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      ),
+      performance: (
+        <div className="space-y-4">
+          <p>
+            Una de las decisiones clave fue usar **Astro**, un generador de
+            sitios estáticos moderno, para maximizar el rendimiento.
+          </p>
+          <ul className="list-disc list-inside ml-2 space-y-2">
+            <li>
+              <span className="font-bold">Zero JavaScript por defecto: </span>{" "}
+              Astro envía la menor cantidad de JavaScript posible, lo que
+              resulta en tiempos de carga notablemente rápidos.
+            </li>
+            <li>
+              <span className="font-bold">Arquitectura de Islas: </span> Permite
+              hidratar solo las islas de interactividad (como carruseles o menús
+              interactivos) con frameworks como React, dejando el resto como
+              HTML/CSS estático de alto rendimiento.
+            </li>
+            <li>
+              <span className="font-bold">Optimización SEO: </span> El marcado
+              estático ayuda a los motores de búsqueda a indexar el contenido de
+              manera más efectiva.
+            </li>
+          </ul>
+        </div>
+      ),
+      "tech-stack": (
+        <div>
+          <ul className="list-disc list-inside mt-4 ml-2 space-y-2">
+            <li>
+              <span className="font-bold">Framework: </span> **Astro** para un
+              enfoque de contenido primero y un alto rendimiento.
+            </li>
+            <li>
+              <span className="font-bold">Estilos: </span> **Tailwind CSS** para
+              un desarrollo rápido y flexible del diseño responsivo.
+            </li>
+            <li>
+              <span className="font-bold">Lenguaje: </span> **TypeScript** para
+              agregar seguridad de tipos y mejorar la escalabilidad del código.
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+  },
+
+  "landing-page": {
+    title: "Landing Page",
+    description:
+      "Landing page de programador freelance, diseñada para practicar el diseño responsivo avanzado y la creación de componentes reutilizables con React y Tailwind CSS.",
+    technologies: ["React", "Tailwind", "Javascript"],
+    externalLink:
+      "https://r3dgrave.github.io/landingpage-programadorfreelance/",
+    githubLink: [
+      {
+        enlace: "https://github.com/R3dgrave/landingpage-programadorfreelance",
+        name: "Ver Código",
+      },
+    ],
+    sections: [
+      { id: "overview", title: "Visión General" },
+      { id: "design", title: "Diseño y Responsive" },
+      { id: "tech-stack", title: "Tecnología Utilizada" },
+    ],
+    content: {
+      overview: (
+        <div>
+          <p>
+            Esta landing page fue construida con el objetivo de simular una
+            **página de servicios profesional**. El foco del desarrollo estuvo
+            en dominar las habilidades de **diseño responsivo** y la estructura
+            de componentes en **React**.
+          </p>
+          <p className="mt-4">
+            A través de secciones claras y un llamado a la acción (CTA) bien
+            definido, busca guiar al usuario a través de los servicios
+            ofrecidos.
+          </p>
+        </div>
+      ),
+      design: (
+        <div className="space-y-4">
+          <p>
+            El diseño se creó directamente en el código utilizando las
+            utilidades de Tailwind CSS, prestando especial atención a cómo se
+            adapta a diferentes tamaños de pantalla.
+          </p>
+          <ul className="list-disc list-inside ml-2 space-y-2">
+            <li>
+              <span className="font-bold">Mobile First: </span> Se siguió la
+              metodología *mobile first* para asegurar una excelente experiencia
+              en dispositivos móviles.
+            </li>
+            <li>
+              <span className="font-bold">Componentes Reutilizables: </span> Se
+              modularizó el diseño en componentes de React (e.g., Header, CTA,
+              Testimonios) para facilitar el mantenimiento y la escalabilidad.
+            </li>
+          </ul>
+          <div className="my-4 flex justify-center">
+            <ZoomableImage
+              src="/landing/landing.webp"
+              alt="Captura de la landing page"
+              className="w-[100%] rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      ),
+      "tech-stack": (
+        <div>
+          <ul className="list-disc list-inside mt-4 ml-2 space-y-2">
+            <li>
+              <span className="font-bold">Framework: </span> **React** para la
+              estructura de la interfaz de usuario.
+            </li>
+            <li>
+              <span className="font-bold">Estilos: </span> **Tailwind CSS** para
+              un sistema de diseño basado en utilidades.
+            </li>
+            <li>
+              <span className="font-bold">Despliegue: </span> Alojado en
+              **GitHub Pages**.
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+  },
+
+  "random-color": {
+    title: "Color Aleatorio",
+    description:
+      "Generador de colores hexadecimales aleatorios. Una sencilla aplicación web construida con HTML, CSS y JavaScript para practicar la generación de datos y manipulación del DOM.",
+    technologies: ["Html5", "Css3", "Javascript"],
+    externalLink: "https://r3dgrave.github.io/ColorHexAleatorios-Javascript/",
+    githubLink: [
+      {
+        enlace: "https://github.com/R3dgrave/ColorHexAleatorios-Javascript",
+        name: "Ver Código",
+      },
+    ],
+    sections: [
+      { id: "overview", title: "Visión General" },
+      { id: "logic", title: "Lógica de Generación" },
+      { id: "tech-stack", title: "Tecnología Utilizada" },
+    ],
+    content: {
+      overview: (
+        <div>
+          <p>
+            **Color Aleatorio** es un proyecto pequeño pero fundamental para
+            practicar la generación de datos dinámicos en el cliente. La
+            aplicación tiene un único propósito: generar y mostrar un color
+            hexadecimal al azar con solo presionar un botón.
+          </p>
+          <p className="mt-4">
+            Fue un ejercicio para comprender cómo manipular el DOM para
+            actualizar tanto el estilo de fondo como el texto que muestra el
+            código hexadecimal.
+          </p>
+          <div className="my-4 flex justify-center">
+            <ZoomableImage
+              src="/landing/colorhex.webp"
+              alt="Captura de la aplicación de color aleatorio"
+              className="w-[100%] rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      ),
+      logic: (
+        <div className="space-y-4">
+          <p>
+            El corazón de esta aplicación reside en la función de JavaScript que
+            genera el código hexadecimal de 6 dígitos.
+          </p>
+          <ul className="list-disc list-inside ml-2 space-y-2">
+            <li>
+              <span className="font-bold">Algoritmo: </span> Se genera un número
+              aleatorio y se convierte a base 16 (hexadecimal).
+            </li>
+            <li>
+              <span className="font-bold">Manipulación del DOM: </span> El color
+              generado se asigna al `background-color` del body y el código se
+              inserta en un elemento de texto.
+            </li>
+          </ul>
+        </div>
+      ),
+      "tech-stack": (
+        <div>
+          <p>
+            Este proyecto está completamente construido con los fundamentos de
+            la web:
+          </p>
+          <ul className="list-disc list-inside mt-4 ml-2 space-y-2">
+            <li>
+              <span className="font-bold">Front-end: </span> **HTML, CSS, y
+              JavaScript** puro.
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+  },
+
+  calculator: {
+    title: "Calculadora",
+    description:
+      "Calculadora web básica desarrollada con React. Permite realizar operaciones aritméticas simples con una interfaz intuitiva, sirviendo como una práctica de la gestión de estado de React.",
+    technologies: ["React", "Html5", "Css3", "Javascript"],
+    externalLink: "https://r3dgrave.github.io/YourCalculator/",
+    githubLink: [
+      {
+        enlace: "https://github.com/R3dgrave/YourCalculator",
+        name: "Ver Código",
+      },
+    ],
+    sections: [
+      { id: "overview", title: "Visión General" },
+      { id: "react-state", title: "Gestión de Estado con React" },
+      { id: "tech-stack", title: "Tecnología Utilizada" },
+    ],
+    content: {
+      overview: (
+        <div>
+          <p>
+            Una **calculadora funcional** es un proyecto clásico para dominar
+            cualquier framework. Esta versión, construida con **React**, permite
+            realizar las operaciones aritméticas básicas (+, -, x, /).
+          </p>
+          <p className="mt-4">
+            El principal enfoque fue la correcta **gestión de la lógica de
+            entrada** (manejo de números, operadores y el botón de igual) y la
+            **actualización del estado** de la pantalla.
+          </p>
+          <div className="my-4 flex justify-center">
+            <ZoomableImage
+              src="/landing/calculadora.webp"
+              alt="Captura de la calculadora web"
+              className="w-[100%] rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      ),
+      "react-state": (
+        <div className="space-y-4">
+          <p>
+            El desafío central fue gestionar el flujo de datos y el estado de la
+            aplicación.
+          </p>
+          <ul className="list-disc list-inside ml-2 space-y-2">
+            <li>
+              <span className="font-bold">Hooks: </span> Se utiliza el hook
+              <CodeHighlight>useState</CodeHighlight> para manejar la entrada de
+              la calculadora, el operador actual y el número anterior.
+            </li>
+            <li>
+              <span className="font-bold">Lógica de Cálculo: </span> La lógica
+              para evaluar la expresión se encapsula en una función manejadora,
+              asegurando que los estados se actualicen correctamente y que la
+              interfaz se re-renderice de forma eficiente.
+            </li>
+          </ul>
+        </div>
+      ),
+      "tech-stack": (
+        <div>
+          <ul className="list-disc list-inside mt-4 ml-2 space-y-2">
+            <li>
+              <span className="font-bold">Framework: </span> **React**
+            </li>
+            <li>
+              <span className="font-bold">Estilos: </span> **CSS/HTML** simple
+              para un diseño de matriz de botones tradicional.
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+  },
+
+  "quick-notes": {
+    title: "Notas Rápidas",
+    description:
+      "Aplicación web para tomar notas rápidas, desarrollada con React. Permite crear, editar y eliminar notas de forma sencilla, incluyendo un editor de texto enriquecido con Quill.js.",
+    technologies: ["React", "Html5", "Css3", "Javascript"],
+    externalLink: "https://r3dgrave.github.io/YourNotebook/",
+    githubLink: [
+      {
+        enlace: "https://github.com/R3dgrave/YourNotebook",
+        name: "Ver Código",
+      },
+    ],
+    sections: [
+      { id: "overview", title: "Visión General" },
+      { id: "editor", title: "Integración de Quill.js" },
+      { id: "tech-stack", title: "Tecnología Utilizada" },
+    ],
+    content: {
+      overview: (
+        <div>
+          <p>
+            **Notas Rápidas** es una aplicación de productividad simple que
+            simula un cuaderno digital. Permite a los usuarios crear, almacenar,
+            editar y eliminar notas, con el valor añadido de un **editor de
+            texto enriquecido**.
+          </p>
+          <p className="mt-4">
+            El principal aprendizaje en este proyecto fue la **integración de
+            una librería externa compleja** como Quill.js en un entorno de
+            React, incluyendo la persistencia de datos complejos.
+          </p>
+        </div>
+      ),
+      editor: (
+        <div className="space-y-4">
+          <span className="text-xl font-bold text-[#0a4c91] dark:text-[#00BAFE]">
+            Editor de Texto Enriquecido
+          </span>
+          <p>
+            Para ofrecer una mejor experiencia al usuario, se integró
+            **Quill.js**, un editor de código abierto, permitiendo formatos como
+            negrita, cursiva, listas y encabezados dentro de las notas.
+          </p>
+          <ul className="list-disc list-inside ml-2 space-y-2">
+            <li>
+              <span className="font-bold">Manejo de Contenido: </span> Quill.js
+              maneja el contenido en un formato propio (`Delta` o `HTML`), lo
+              que requiere un manejo cuidadoso del estado de React y la
+              conversión para su almacenamiento.
+            </li>
+            <li>
+              <span className="font-bold">Persistencia: </span> Las notas se
+              almacenan en el navegador (
+              <CodeHighlight>localStorage</CodeHighlight>) para mantener la
+              información entre sesiones.
+            </li>
+          </ul>
+          <div className="my-4 flex justify-center">
+            <ZoomableImage
+              src="/landing/notas.webp"
+              alt="Captura de la aplicación de notas con editor Quill"
+              className="w-[100%] rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      ),
+      "tech-stack": (
+        <div>
+          <ul className="list-disc list-inside mt-4 ml-2 space-y-2">
+            <li>
+              <span className="font-bold">Framework: </span> **React**
+            </li>
+            <li>
+              <span className="font-bold">Librería de Editor: </span>{" "}
+              **Quill.js**
+            </li>
+          </ul>
         </div>
       ),
     },

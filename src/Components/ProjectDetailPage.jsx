@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import { Github, ExternalLink, ArrowLeft } from "lucide-react";
+import { motion } from "framer-motion";
 import {
   SiReact,
   SiTailwindcss,

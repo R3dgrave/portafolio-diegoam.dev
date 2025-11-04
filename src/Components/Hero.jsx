@@ -6,6 +6,7 @@ import {
   Linkedin,
   ArrowDown,
   Mail,
+  Phone
 } from "lucide-react";
 import { AnimatedElement } from "../Components/AnimatedElement";
 
@@ -78,7 +79,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="https://drive.google.com/file/d/1Yvcnp23ueUZqO8GBcjVlRyruX88VtMO5/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1OPVeAMSmIHZAk1p9jjh-bzPDWFSvqv0Y/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="btn bg-[#0a4c91] dark:bg-[#00BAFE] text-white group flex items-center border-none"
@@ -93,6 +94,17 @@ const Hero = () => {
               {copied ? "¡Copiado!" : email}
               <Copy className="ml-2 h-4 w-4" />
             </button>
+          </AnimatedElement>
+          <AnimatedElement
+            animation="fade-up"
+            delay={0.4}
+            className="flex gap-4"
+          >
+            <div className="w-full">
+              <h4 className=" flex items-center text-black dark:text-gray-200 uppercase font-semibold">
+                 <Phone className="mr-4"/> +56 9 7689 6260
+              </h4>
+            </div>
           </AnimatedElement>
 
           <AnimatedElement
