@@ -96,6 +96,16 @@ const allProjects = [
     github: ["https://github.com/R3dgrave/diegoamcode"],
   },
   {
+    title: "Api E-commerce Node.js",
+    id: "ecommerceApi",
+    description:
+      "API RESTful para un sistema de e-commerce, desarrollada con Node.js y Express.js. Incluye funcionalidades para gestionar productos, usuarios y pedidos. Se conecta una base de datos MongoDB para el almacenamiento de datos. Bycript para el hash de contraseñas y JWT para la autenticación. Moongose para interactuar con MongoDB.",
+    image: "/landing/api.webp",
+    technologies: ["Node.js", "Express.js", "Javascript"],
+    website: null,
+    github: ["https://github.com/R3dgrave/ecommerce-nodejs"],
+  },
+  {
     title: "Landing Page",
     id: "landing-page",
     description:

@@ -53,7 +53,7 @@ const ProjectDetailPage = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [project.sections]);
+  }, [project]);
 
   useEffect(() => {
     if (titleRef.current) {

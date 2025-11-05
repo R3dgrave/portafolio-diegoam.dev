@@ -1579,4 +1579,66 @@ export const projectsData = {
       ),
     },
   },
+
+  ecommerceApi: {
+    title: "Api E-commerce Node.js",
+    description:
+      "API RESTful robusta y escalable diseñada para un sistema de e-commerce completo. Desarrollada con Node.js y el framework Express.js, esta API maneja toda la lógica de negocio, incluyendo gestión de productos, autenticación de usuarios y procesamiento de pedidos.",
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "Javascript",
+      "MongoDB",
+      "Mongoose",
+      "Bcrypt",
+      "JWT",
+    ],
+    externalLink: null,
+    githubLink: [
+      {
+        enlace: "https://github.com/R3dgrave/ecommerce-nodejs",
+        name: "Ver Repositorio de API",
+      },
+    ],
+    sections: [
+      { id: "overview", title: "Visión General" },
+      { id: "architecture", title: "Arquitectura" },
+      { id: "security", title: "Seguridad" },
+      { id: "tech-stack", title: "Tecnología Utilizada" },
+    ],
+    content: {
+      overview: (
+        <div>
+          Este proyecto fue desarrollado para practicar la construcción de
+          backends completos desde cero, enfocándose en la modularidad, la
+          seguridad y la implementación de una arquitectura RESTful estándar.
+        </div>
+      ),
+      architecture: (
+        <div>
+          La API sigue una arquitectura RESTful, con rutas organizadas por
+          recursos (productos, usuarios, pedidos). Cada recurso tiene su propio
+          conjunto de controladores y modelos, facilitando la escalabilidad y el
+          mantenimiento del código.
+        </div>
+      ),
+      security: (
+        <div>
+          Se implementaron múltiples capas de seguridad, incluyendo el uso de
+          Bcrypt para el almacenamiento seguro de contraseñas y JWT para la
+          autenticación y autorización de usuarios. Las rutas sensibles están
+          protegidas mediante middleware que verifica los tokens y los roles de
+          usuario.
+        </div>
+      ),
+      "tech-stack": (
+        <div>
+          El proyecto utiliza Node.js y Express.js para el servidor, MongoDB
+          como base de datos NoSQL, Mongoose para la interacción con la base de
+          datos, Bcrypt para la seguridad de las contraseñas y JWT para la
+          gestión de sesiones y autenticación.
+        </div>
+      ),
+    },
+  },
 };
