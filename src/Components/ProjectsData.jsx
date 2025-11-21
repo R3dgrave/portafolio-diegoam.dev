@@ -1084,10 +1084,10 @@ export const projectsData = {
     description:
       "Aplicación web que permite convertir entre diferentes monedas utilizando tasas de cambio en tiempo real, con gráficos generados por la librería Chart.js. Ideal para aprender sobre consumo de APIs y manipulación del DOM con Vanilla JavaScript.",
     technologies: ["Html5", "Css3", "Javascript"],
-    externalLink: "https://r3dgrave.github.io/Conversor-de-monedas-USD-EUR/",
+    externalLink: "https://r3dgrave.github.io/Prueba---Conversor-de-monedas/",
     githubLink: [
       {
-        enlace: "https://github.com/R3dgrave/Conversor-de-monedas-USD-EUR",
+        enlace: "https://github.com/R3dgrave/Prueba---Conversor-de-monedas",
         name: "Ver Código",
       },
     ],
