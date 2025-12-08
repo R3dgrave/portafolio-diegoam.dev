@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import {
   Download,
   Copy,
@@ -6,15 +6,24 @@ import {
   Linkedin,
   ArrowDown,
   Mail,
-  Phone
+  Phone,
 } from "lucide-react";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNodedotjs,
+  SiExpress,
+  SiTailwindcss,
+  SiPostgresql,
+  SiMongodb,
+} from "react-icons/si";
 import { AnimatedElement } from "../Components/AnimatedElement";
 
 const Hero = () => {
   const [copied, setCopied] = useState(false);
   const email = "diegoabm.dev@gmail.com";
   const heroRef = useRef(null);
-  const [scrollProgress, setScrollProgress] = useState(0);
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(email);
@@ -22,154 +31,137 @@ const Hero = () => {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const heroHeight = heroRef.current?.offsetHeight || 0; // La animación comienza cuando el usuario ha hecho scroll un 10% del Hero
-      const startScroll = heroHeight * 0.1;
-      const endScroll = heroHeight * 0.6;
-      let progress = 0;
-      if (scrollPosition > startScroll) {
-        progress = Math.min(
-          (scrollPosition - startScroll) / (endScroll - startScroll),
-          1
-        );
-      }
-      setScrollProgress(progress);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const heroStyle = {
-    opacity: 1 - scrollProgress,
-    transform: `scale(${1 - scrollProgress * 0.05})`,
-  };
-
   return (
     <section
       ref={heroRef}
       id="inicio"
       title="Inicio"
-      className="min-h-screen flex flex-col pt-16 bg-background dark:bg-zinc-900 transition-colors"
+      className="flex flex-col bg-background dark:bg-zinc-900 transition-colors pt-20"
     >
-      <div
-        style={heroStyle}
-        className="p-4 md:container grid md:grid-cols-2 gap-8 items-center py-12 flex-grow"
-      >
+      <div className="p-4 md:container max-w-4xl grid lg:grid-cols-2 gap-4 items-start flex-grow">
         <div className="space-y-6">
+          {/*Foto*/}
           <AnimatedElement animation="fade-up">
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight pb-4">
-              Hola, soy <br />
-              <span className="text-[#0a4c91] dark:text-[#00BAFE]">
-                Diego Abanto
-              </span>
-            </h1>
-            <p className="text-xl dark:text-gray-200">
-              Desarrollador Web Frontend Junior
-            </p>
-            <p className="text-md dark:text-gray-400">
-              Construyo experiencias web interactivas y funcionales.
-            </p>
-          </AnimatedElement>
-          <AnimatedElement
-            animation="fade-up"
-            delay={0.2}
-            className="flex flex-col sm:flex-row gap-4"
-          >
-            <a
-              href="https://drive.google.com/file/d/1OPVeAMSmIHZAk1p9jjh-bzPDWFSvqv0Y/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn bg-[#0a4c91] dark:bg-[#00BAFE] text-white group flex items-center border-none"
-            >
-              <Download className="text-white mr-2 h-4 w-4 transition-custom group-hover:-translate-y-1" />
-              Ver CV
-            </a>
-            <button
-              className="btn btn-ghost border border-gray-400 dark:border-gray-600 group flex items-center text-black dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-zinc-700 transition-colors"
-              onClick={copyToClipboard}
-            >
-              {copied ? "¡Copiado!" : email}
-              <Copy className="ml-2 h-4 w-4" />
-            </button>
-          </AnimatedElement>
-          <AnimatedElement
-            animation="fade-up"
-            delay={0.4}
-            className="flex gap-4"
-          >
-            <div className="w-full">
-              <h4 className=" flex items-center text-black dark:text-gray-200 uppercase font-semibold">
-                 <Phone className="mr-4"/> +56 9 7689 6260
-              </h4>
+            <div className="relative w-36 h-36 md:mx-0 mb-6">
+              <div className="absolute inset-0 rounded-full bg-blue-800 dark:bg-sky-500/65 blur-3xl opacity-50" />
+              <img
+                src="/photo-me.webp"
+                alt="Diego Abanto"
+                className="relative rounded-full object-cover border-2 border-white dark:border-zinc-800 shadow-xl shadow-gray-900/50 w-full h-full"
+              />
             </div>
           </AnimatedElement>
 
-          <AnimatedElement
-            animation="fade-up"
-            delay={0.4}
-            className="flex gap-4"
-          >
-            <a
-              href="https://github.com/R3dgrave"
-              aria-label="GitHub"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-ghost hover:bg-[#0a4c91] hover:dark:bg-[#00BAFE] hover:text-white transition-colors border-none"
-            >
-              <Github className="h-6 w-6" />
-            </a>
+          {/* NOMBRE */}
+          <AnimatedElement animation="fade-up">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight pb-4 uppercase font-sans">
+              <span>
+                Diego Abanto
+              </span>
+            </h1>
+            <p className="text-xl text-[#0a4c91] dark:text-[#00BAFE] font-sans font-semibold">Desarrollador Junior</p>
+          </AnimatedElement>
 
-            <a
-              href="https://www.linkedin.com/in/diegoabantomendoza"
-              aria-label="LinkedIn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-ghost hover:bg-[#0a4c91] hover:dark:bg-[#00BAFE] hover:text-white transition-colors border-none"
-            >
-              <Linkedin className="h-6 w-6" />
-            </a>
+          {/* TECNOLOGÍAS */}
+          <AnimatedElement animation="fade-up">
+            <div className="mt-6 flex flex-row gap-2 flex-wrap items-center">
+              <SiJavascript className="text-yellow-400 size-8 rounded-lg" />
+              <SiReact className="text-sky-400 size-8" />
+              <SiTailwindcss className="text-sky-300 size-8" />
+              <span> | </span>
+              <SiNodedotjs className="text-green-600 size-8" />
+              <SiExpress className="text-gray-700 size-8" />
+              <span> | </span>
+              <SiPostgresql className="text-blue-700 size-8" />
+              <SiMongodb className="text-green-500 size-8" />
+            </div>
+          </AnimatedElement>
 
-            <a
-              href="mailto:diegoabm.dev@gmail.com"
-              aria-label="Email"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-ghost hover:bg-[#0a4c91] hover:dark:bg-[#00BAFE] hover:text-white transition-colors border-none"
-            >
-              <Mail className="h-6 w-6" />
-            </a>
+          {/* DESCRIPCIÓN */}
+          <AnimatedElement animation="fade-up">
+            <p className="text-md text-gray-800 dark:text-gray-200 leading-relaxed max-w-prose transition-colors pt-4">
+              Soy Diego, Analista Programador enfocado en
+              <span className="font-semibold"> Desarrollo Web</span>. Tengo
+              experiencia con
+              <span className="font-semibold">
+                {" "}
+                JavaScript, React, TailwindCSS, Node.js/Express y gestores de
+                bases de datos como PostgreSQL y MongoDB.
+              </span>{" "}
+            </p>
+            <p className="py-4 text-md text-gray-800 dark:text-gray-200 leading-relaxed max-w-prose transition-colors">
+              Actualmente continúo formándome de manera autodidacta en{" "}
+              <span className="font-semibold">
+                arquitectura de software, buenas prácticas y patrones de diseño
+              </span>
+              . Si deseas conocer más sobre mi perfil o experiencia, estaré
+              encantado de conversar.
+            </p>
+          </AnimatedElement>
+
+          {/* BOTONES DE CONTACTO */}
+          <AnimatedElement animation="fade-up">
+            <div className="flex flex-row gap-2">
+              <a
+                href="https://drive.google.com/file/d/1OPVeAMSmIHZAk1p9jjh-bzPDWFSvqv0Y/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn bg-[#0a4c91] dark:bg-[#00BAFE] text-white group flex items-center border-none"
+              >
+                <Download className="text-white h-4 w-4 transition-custom group-hover:-translate-y-1" />
+                Ver CV
+              </a>
+              <a
+                href="https://github.com/R3dgrave"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-ghost hover:bg-[#0a4c91] hover:dark:bg-[#00BAFE] hover:text-white transition-colors border-none"
+              >
+                <Github className="h-6 w-6" />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/diegoabantomendoza"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-ghost hover:bg-[#0a4c91] hover:dark:bg-[#00BAFE] hover:text-white transition-colors border-none"
+              >
+                <Linkedin className="h-6 w-6" />
+              </a>
+
+              <a
+                href="mailto:diegoabm.dev@gmail.com"
+                aria-label="Email"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-ghost hover:bg-[#0a4c91] hover:dark:bg-[#00BAFE] hover:text-white transition-colors border-none"
+              >
+                <Mail className="h-6 w-6" />
+              </a>
+            </div>
+          </AnimatedElement>
+
+          {/* CONTACTO */}
+          <AnimatedElement animation="fade-up">
+            <div className="flex flex-col lg:flex-row gap-4">
+              <button
+                className="btn btn-ghost btn-wide border border-gray-400 dark:border-gray-600 group flex items-center text-black dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-zinc-700 transition-colors"
+                onClick={copyToClipboard}
+                aria-label="Copiar a portapapeles"
+              >
+                {copied ? "¡Copiado!" : email}
+                <Copy className="ml-2 h-4 w-4" />
+              </button>
+
+              <button className="btn btn-wide border border-gray-400 dark:border-gray-600 group flex items-center text-black dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-zinc-700 transition-colors">
+                +56 9 7689 6260
+                <Phone className="ml-2 h-4 w-4" />
+              </button>
+            </div>
           </AnimatedElement>
         </div>
-
-        <AnimatedElement
-          animation="fade-up"
-          delay={0.6}
-          className="relative aspect-square max-w-lg mx-auto"
-        >
-          {/* Efecto de resplandor */}
-          <div className="absolute inset-0 rounded-full bg-blue-800 dark:bg-sky-500/65 blur-3xl opacity-50" />
-          {/* Imagen con sombra y bordes dobles */}
-          <img
-            src="/photo-me.webp"
-            alt="Diego Abanto"
-            className="relative rounded-full object-cover border-2 border-white dark:border-zinc-800 shadow-xl shadow-gray-900/50 w-full h-full"
-          />
-        </AnimatedElement>
-      </div>
-
-      <div className="w-full flex justify-center py-4 md:translate-y-10 mb-10">
-        <AnimatedElement animation="fade-up" delay={0.8}>
-          <a
-            href="#sobre-mi"
-            className="flex flex-col items-center hover:text-primary transition-colors text-black dark:text-gray-200"
-          >
-            <span className="text-sm mb-2">Descubre más</span>
-            <ArrowDown className="h-5 w-5 animate-bounce" />
-          </a>
-        </AnimatedElement>
       </div>
     </section>
   );

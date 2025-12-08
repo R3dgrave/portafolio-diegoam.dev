@@ -19,14 +19,17 @@ import { User } from "lucide-react";
 const About = () => {
   return (
     <>
-      <section id="sobre-mi" className="py-20 bg-gray-100 dark:bg-zinc-950 dark:text-white transition-colors">
+      <section
+        id="sobre-mi"
+        className="py-20 bg-gray-100 dark:bg-zinc-950 dark:text-white transition-colors"
+      >
         <div className="container">
           <AnimatedElement
             animation="fade-up"
             className="max-w-3xl mx-auto text-center mb-16"
           >
             <h2 className="text-3xl font-bold mb-4 flex justify-center items-center gap-4">
-              <User size={32} className="text-primary dark:text-white"/>
+              <User size={32} className="text-primary dark:text-white" />
               Sobre Mí
             </h2>
             <div className="h-1 w-20 bg-primary mx-auto mb-8" />
@@ -34,7 +37,13 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <AnimatedElement animation="slide-in-left" className="space-y-6">
               <p className="text-md text-gray-700 dark:text-gray-300">
-                Soy Diego Abanto, un Analista Programador de 26 años con experiencia tanto en hardware como en software. Mi verdadera pasión es el desarrollo web, la cual descubrí a través de proyectos personales y académicos. Actualmente, me enfoco en el desarrollo Front-End y me mantengo en constante formación para estar siempre a la vanguardia de las tecnologías del mercado. En mi tiempo libre, disfruto de los videojuegos y las series.
+                Soy Diego, Analista Programador enfocado en desarrollo web.
+                Trabajo con JavaScript, React, TailwindCSS, Node.js/Express y
+                gestores de bases de datos como PostgreSQL y MongoDB. Me
+                apasiona crear soluciones funcionales y bien estructuradas, y
+                continúo formándome en arquitectura de software, buenas
+                prácticas y patrones de diseño. Estoy disponible para nuevas
+                oportunidades y abierto a conversar.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
@@ -53,7 +62,9 @@ const About = () => {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2 text-black dark:text-white">Bases de datos</h3>
+                  <h3 className="font-semibold mb-2 text-black dark:text-white">
+                    Bases de datos
+                  </h3>
                   <ul className="space-y-2 text-gray-700 dark:text-gray-300">
                     <li className="flex items-center gap-2">
                       <SiPostgresql className="text-blue-600" />
@@ -70,7 +81,9 @@ const About = () => {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2 text-black dark:text-white">Frameworks o librerías</h3>
+                  <h3 className="font-semibold mb-2 text-black dark:text-white">
+                    Frameworks o librerías
+                  </h3>
                   <ul className="space-y-2 text-gray-700 dark:text-gray-300">
                     <li className="flex items-center gap-2">
                       <SiReact className="text-blue-400" />

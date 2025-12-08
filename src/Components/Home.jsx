@@ -34,11 +34,6 @@ const Home = () => {
       <div className="min-h-screen bg-background">
         <main>
           <Hero heroRef={heroRef} heroStyle={heroStyle} />
-          <About />
-          <Experience />
-          <Education />
-          <Projects />
-          <Contact />
         </main>
       </div>
     </>

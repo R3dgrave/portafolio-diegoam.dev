@@ -167,28 +167,23 @@ const Projects = () => {
     <section
       id="proyectos"
       title="Proyectos"
-      className="py-20 dark:bg-zinc-950 dark:text-white transition-colors"
+      className="w-full max-w-7xl mx-auto flex flex-col justify-center px-4 py-10 "
     >
-      <div className="container mx-auto px-4">
-        <AnimatedElement
-          delay={0}
-          animation="fade-up"
-          className="max-w-3xl mx-auto text-center mb-16"
-        >
-          <h2 className="text-3xl font-bold mb-4 flex justify-center items-center gap-4">
-            <Code size={32} className="text-primary dark:text-white" />
+      <div className="bg-black/10 mx-auto px-4 py-5 rounded-xl">
+        <AnimatedElement delay={0} animation="fade-up" className="mb-16">
+          <h2 className="text-xl font-bold mb-4 flex items-center gap-4">
+            <Code size={20} className="text-primary dark:text-white" />
             Proyectos
           </h2>
-          <div className="h-1 w-20 bg-primary mx-auto mb-8" />
-          <p className="text-lg text-gray-600 dark:text-gray-400">
-            Aquí puedes ver algunos de mis trabajos más recientes.
+          <p className="text-md text-gray-600 dark:text-gray-400">
+            Aquí puedes ver algunos de mis proyectos más recientes.
           </p>
         </AnimatedElement>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {projectsToShow.map((project) => (
             <AnimatedElement animation="fade-up" key={project.id}>
-              <div className="rounded-xl overflow-hidden shadow-lg transition-shadow duration-300 bg-white dark:bg-zinc-900 flex flex-col h-full">
+              <div className="rounded-xl overflow-hidden shadow-lg transition-shadow duration-300 bg-white dark:bg-zinc-950 flex flex-col h-full">
                 <Link to={`/proyectos/${project.id}`}>
                   <div className="relative overflow-hidden">
                     <img
