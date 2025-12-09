@@ -112,8 +112,8 @@ const Projectos = () => {
   };
 
   return (
-    <section className="w-full max-w-7xl mx-auto flex flex-col justify-center py-6 md:py-20">
-      <div className="mx-auto px-4 py-5 rounded-xl">
+    <section className="w-full max-w-7xl mx-auto py-6 md:py-10">
+      <div className="flex flex-col justify-start items-start px-4 md:py-0 py-5 rounded-xl">
         <AnimatedElement delay={0} animation="fade-up">
           <div className="w-full my-4 flex justify-start pb-8">
             <h2 className="text-4xl font-bold flex items-center gap-4 uppercase font-sans">
@@ -126,7 +126,7 @@ const Projectos = () => {
         </AnimatedElement>
         <div className="flex flex-col items-end">
           {projectsToShow.map((project) => (
-            <AnimatedElement animation="fade-up">
+            <AnimatedElement animation="fade-up" key={project.id}>
               <div
                 key={project.id}
                 className="w-full flex flex-col md:flex-row md:p-0 rounded-xl border dark:border-white mb-8 gap-2 shadow-lg"
@@ -204,15 +204,15 @@ const Projectos = () => {
             <AnimatedElement animation="fade-up" className="text-center">
               <button
                 onClick={() => setShowAll(!showAll)}
-                className="inline-flex items-center px-6 py-3 text-base font-semibold rounded-lg text-white bg-slate-800 hover:bg-slate-700 transition-colors shadow-lg"
+                className="btn btn-wide px-6 bg-[#0a4c91] dark:bg-[#00BAFE] text-white group flex items-center border-none"
               >
                 {showAll ? (
                   <>
-                    Ver Menos <ChevronUp size={20} className="ml-2" />
+                    Ver Menos <ChevronUp size={20} className="text-white h-4 w-4 transition-custom group-hover:-translate-y-1" />
                   </>
                 ) : (
                   <>
-                    Ver Más Proyectos <ChevronDown size={20} className="ml-2" />
+                    Ver Más Proyectos <ChevronDown size={20} className="text-white h-4 w-4 transition-custom group-hover:-translate-y-1" />
                   </>
                 )}
               </button>

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import {
   Download,
   Copy,
@@ -23,7 +23,6 @@ import { AnimatedElement } from "../Components/AnimatedElement";
 const Hero = () => {
   const [copied, setCopied] = useState(false);
   const email = "diegoabm.dev@gmail.com";
-  const heroRef = useRef(null);
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(email);
@@ -33,12 +32,10 @@ const Hero = () => {
 
   return (
     <section
-      ref={heroRef}
       id="inicio"
-      title="Inicio"
       className="flex flex-col bg-background dark:bg-zinc-900 transition-colors pt-20"
     >
-      <div className="p-4 md:container max-w-4xl grid lg:grid-cols-2 gap-4 items-start flex-grow">
+      <div className="p-4 md:container max-w-4xl gap-4 items-start flex-grow">
         <div className="space-y-6">
           {/*Foto*/}
           <AnimatedElement animation="fade-up">

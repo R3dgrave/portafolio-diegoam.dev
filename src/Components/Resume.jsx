@@ -36,7 +36,7 @@ const Resume = () => {
 
   return (
     <div
-      className="w-full max-w-7xl mx-auto flex flex-col justify-center px-4 py-6 md:py-32"
+      className="w-full max-w-7xl mx-auto flex flex-col justify-center md:py-0 py-5"
       id="resumen"
     >
       <div className="flex flex-col lg:flex-row justify-between gap-8 w-full">
@@ -87,7 +87,7 @@ const Resume = () => {
                 <span className="dark:text-white text-black text-sm">
                   [
                 </span>{" "}
-                Experiencia Laboral{" "}
+                Experiencia{" "}
                 <span className="dark:text-white text-black text-sm">]</span>
               </h2>
             </div>
