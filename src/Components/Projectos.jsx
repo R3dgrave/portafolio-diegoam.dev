@@ -19,6 +19,7 @@ import {
   SiJavascript,
   SiAstro,
   SiTypescript,
+  SiJest
 } from "react-icons/si";
 
 const allProjects = [
@@ -31,6 +32,16 @@ const allProjects = [
     technologies: ["React", "Typescript", "Tailwind", "Shadcn"],
     website: "https://financial-dashboard-swart-one.vercel.app/",
     github: ["https://github.com/R3dgrave/financial-dashboard/"],
+  },
+  {
+    title: "Api E-commerce Node.js",
+    id: "ecommerceApi",
+    description:
+      "API RESTful robusta y modular para un sistema de comercio electrónico, construida con Node.js, Express.js y MongoDB/Mongoose. La arquitectura del proyecto sigue rigurosos Patrones de Diseño (Service, Repository, Provider) y aplica Inyección de Dependencias (DI), garantizando alta testabilidad (probada con Jest/Sinon) y un fuerte desacoplamiento de capas.",
+    image: "/landing/api.webp",
+    technologies: ["NodeJS", "ExpressJS", "Javascript", "Jest"],
+    website: null,
+    github: ["https://github.com/R3dgrave/ecommerce-nodejs"],
   },
   {
     title: "Sistema Médico",
@@ -65,16 +76,6 @@ const allProjects = [
     website: "https://r3dgrave.github.io/Conversor-de-monedas-USD-EUR/",
     github: ["https://github.com/R3dgrave/Conversor-de-monedas-USD-EUR"],
   },
-  {
-    title: "Api E-commerce Node.js",
-    id: "ecommerceApi",
-    description:
-      "API RESTful para un sistema de e-commerce, desarrollada con Node.js y Express.js. Incluye funcionalidades para gestionar productos, usuarios y pedidos. Se conecta una base de datos MongoDB para el almacenamiento de datos. Bycript para el hash de contraseñas y JWT para la autenticación. Moongose para interactuar con MongoDB.",
-    image: "/landing/api.webp",
-    technologies: ["NodeJS", "ExpressJS", "Javascript"],
-    website: null,
-    github: ["https://github.com/R3dgrave/ecommerce-nodejs"],
-  },
 ];
 
 const techIcons = {
@@ -93,6 +94,7 @@ const techIcons = {
   Typescript: (
     <SiTypescript size={30} className="text-blue-500 dark:text-blue-500" />
   ),
+  Jest: <SiJest size={30} className="text-red-600 dark:text-red-600" />,
 };
 
 const Projectos = () => {
@@ -148,11 +150,7 @@ const Projectos = () => {
                     {/* Tecnologías */}
                     <div className="flex flex-wrap mb-4">
                       {project.technologies.map((tech) => (
-                        <span
-                          key={tech}
-                          className="px-2 py-1"
-                          title={tech}
-                        >
+                        <span key={tech} className="px-2 py-1" title={tech}>
                           {techIcons[tech] || null}
                         </span>
                       ))}
@@ -208,11 +206,19 @@ const Projectos = () => {
               >
                 {showAll ? (
                   <>
-                    Ver Menos <ChevronUp size={20} className="text-white h-4 w-4 transition-custom group-hover:-translate-y-1" />
+                    Ver Menos{" "}
+                    <ChevronUp
+                      size={20}
+                      className="text-white h-4 w-4 transition-custom group-hover:-translate-y-1"
+                    />
                   </>
                 ) : (
                   <>
-                    Ver Más Proyectos <ChevronDown size={20} className="text-white h-4 w-4 transition-custom group-hover:-translate-y-1" />
+                    Ver Más Proyectos{" "}
+                    <ChevronDown
+                      size={20}
+                      className="text-white h-4 w-4 transition-custom group-hover:-translate-y-1"
+                    />
                   </>
                 )}
               </button>
