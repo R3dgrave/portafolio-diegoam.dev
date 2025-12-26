@@ -52,11 +52,11 @@ const Hero = () => {
           {/* NOMBRE */}
           <AnimatedElement animation="fade-up">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight pb-4 uppercase font-sans">
-              <span>
-                Diego Abanto
-              </span>
+              <span>Diego Abanto</span>
             </h1>
-            <p className="text-xl text-[#0a4c91] dark:text-[#00BAFE] font-sans font-semibold">Desarrollador Junior</p>
+            <p className="text-xl text-[#0a4c91] dark:text-[#00BAFE] font-sans font-semibold">
+              Desarrollador Junior
+            </p>
           </AnimatedElement>
 
           {/* TECNOLOGÍAS */}
@@ -77,22 +77,15 @@ const Hero = () => {
           {/* DESCRIPCIÓN */}
           <AnimatedElement animation="fade-up">
             <p className="text-md text-gray-800 dark:text-gray-200 leading-relaxed max-w-prose transition-colors pt-4">
-              Soy Diego, Analista Programador enfocado en
-              <span className="font-semibold"> Desarrollo Web</span>. Tengo
-              experiencia con
-              <span className="font-semibold">
-                {" "}
-                JavaScript, React, TailwindCSS, Node.js/Express y gestores de
-                bases de datos como PostgreSQL y MongoDB.
-              </span>{" "}
+              Apasionado por crear soluciones integrales utilizando JavaScript
+              de extremo a extremo. Mi fuerte es el desarrollo frontend con
+              React, donde aplico patrones de diseño modernos y arquitecturas
+              limpias para crear componentes altamente escalables.
             </p>
-            <p className="py-4 text-md text-gray-800 dark:text-gray-200 leading-relaxed max-w-prose transition-colors">
-              Actualmente continúo formándome de manera autodidacta en{" "}
-              <span className="font-semibold">
-                arquitectura de software, buenas prácticas y patrones de diseño
-              </span>
-              . Si deseas conocer más sobre mi perfil o experiencia, estaré
-              encantado de conversar.
+            <p className="text-md text-gray-800 dark:text-gray-200 leading-relaxed max-w-prose transition-colors pt-4">
+              Domino la gestión de bases de datos, siempre bajo estándares de
+              Clean Code y optimización de rendimiento. Creo en el código bien
+              estructurado como base para productos exitosos.
             </p>
           </AnimatedElement>
 
