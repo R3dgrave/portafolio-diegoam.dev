@@ -93,7 +93,7 @@ const Hero = () => {
           <AnimatedElement animation="fade-up">
             <div className="flex flex-row gap-2">
               <a
-                href="https://drive.google.com/file/d/1OPVeAMSmIHZAk1p9jjh-bzPDWFSvqv0Y/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Vxpw2UGRLClQwPHgxabM3tbmUcKmjh-_/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn bg-[#0a4c91] dark:bg-[#00BAFE] text-white group flex items-center border-none"
