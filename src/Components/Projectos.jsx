@@ -101,7 +101,7 @@ const allProjects = [
     image: "/conversorMoneda/conversor.webp",
     technologies: ["Html5", "Css3", "Javascript"],
     website: "https://r3dgrave.github.io/Prueba---Conversor-de-monedas/",
-    github: ["https://github.com/R3dgrave/Conversor-de-monedas-USD-EUR"],
+    github: ["https://github.com/R3dgrave/Prueba---Conversor-de-monedas"],
   },
 ];
 
