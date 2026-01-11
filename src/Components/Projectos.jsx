@@ -19,36 +19,51 @@ import {
   SiJavascript,
   SiAstro,
   SiTypescript,
-  SiJest
+  SiJest,
+  SiBootstrap
 } from "react-icons/si";
 
 const allProjects = [
-  {
-    title: "Dashboard Financiero Personal",
-    id: "financial-dashboard",
-    description:
-      "Este proyecto es un dashboard financiero personal desarrollado para ayudarte a controlar y visualizar tus finanzas de manera sencilla e intuitiva. Permite a los usuarios registrar ingresos y gastos, obteniendo una visión clara de su situación financiera a través de resúmenes y gráficos. La aplicación es ideal para cualquiera que quiera tomar el control de su presupuesto personal.",
-    image: "/dashboardfinanciero/fd-ui.webp",
-    technologies: ["React", "Typescript", "Tailwind", "Shadcn"],
-    website: "https://financial-dashboard-swart-one.vercel.app/",
-    github: ["https://github.com/R3dgrave/financial-dashboard/"],
-  },
   {
     title: "Api E-commerce Node.js",
     id: "ecommerceApi",
     description:
       "API RESTful robusta y modular para un sistema de comercio electrónico, construida con Node.js, Express.js y MongoDB/Mongoose. La arquitectura del proyecto sigue rigurosos Patrones de Diseño (Service, Repository, Provider) y aplica Inyección de Dependencias (DI), garantizando alta testabilidad (probada con Jest/Sinon) y un fuerte desacoplamiento de capas.",
-    image: "/landing/api.webp",
+    image: "/projects-img/api.webp",
     technologies: ["NodeJS", "ExpressJS", "Javascript", "Jest"],
     website: null,
     github: ["https://github.com/R3dgrave/ecommerce-nodejs"],
+  },
+  {
+    title: "Inmobiliaria ADL",
+    id: "inmobiliaria-adl",
+    description:
+      "Proyecto de práctica desarrollado para el módulo de Programación Dinámica con JavaScript. Consiste en un sitio web de bienes raíces que renderiza propiedades de forma dinámica, permitiendo filtrar por disponibilidad de mascotas, tipo de operación (venta o alquiler) y búsqueda por nombre.",
+    image: "/projects-img/inmobiliaria-ui.webp",
+    technologies: ["Html5", "Css3", "Javascript", "Bootstrap"],
+    website: "https://r3dgrave.github.io/inmobiliaria-adl/",
+    github: [
+      "https://github.com/R3dgrave/inmobiliaria-adl",
+    ],
+  },
+  {
+    title: "Donut Club",
+    id: "donut-club",
+    description:
+      "Donut Club es una aplicación web de alto rendimiento diseñada para la venta de donas artesanales en Santiago. El proyecto se enfoca en una experiencia de usuario fluida, visualmente atractiva y optimizada técnica mente para obtener los mejores puntajes en Core Web Vitals.",
+    image: "/projects-img/donutclub.webp",
+    technologies: ["React", "Html5", "Css3", "Javascript", "Bootstrap"],
+    website: "https://r3dgrave.github.io/donut-club/",
+    github: [
+      "https://github.com/R3dgrave/donut-club",
+    ],
   },
   {
     title: "Sistema Médico",
     id: "sistema-medico",
     description:
       "Desarrollé una solución full-stack para digitalizar la gestión de consultorios médicos, abordando las ineficiencias de los procesos manuales. El proyecto se centra en la optimización de la administración de pacientes, citas y, especialmente, en la creación de una robusta Historia Clínica Electrónica (HCE).",
-    image: "/sistemamedico/smedico_login_1.webp",
+    image: "/projects-img/smedico_login_1.webp",
     technologies: ["React", "Typescript", "NodeJS", "ExpressJS", "Tailwind"],
     website: "https://lafleur-sistemamedico-ui.vercel.app/",
     github: [
@@ -57,14 +72,26 @@ const allProjects = [
     ],
   },
   {
-    title: "Tienda Postres",
-    id: "bettys-cakes",
+    title: "Dashboard Financiero Personal",
+    id: "financial-dashboard",
     description:
-      "Este es un proyecto de demostración para una pastelería, sin carrito de compras ya que la idea es que las ventas se realicen previa coordinacion por WhatsApp, entonces la pagina funcionaria mas como un catalogo para mostar los postres al publico. La aplicación es completamente responsiva y cuenta con un panel de administración para gestionar productos.",
-    image: "/tiendapostres/bettys_cake_1.webp",
-    technologies: ["React", "Typescript", "Tailwind", "Supabase"],
-    website: "https://tiendapostres-ui.vercel.app/",
-    github: ["https://github.com/R3dgrave/tiendapostres-ui"],
+      "Este proyecto es un dashboard financiero personal desarrollado para ayudarte a controlar y visualizar tus finanzas de manera sencilla e intuitiva. Permite a los usuarios registrar ingresos y gastos, obteniendo una visión clara de su situación financiera a través de resúmenes y gráficos. La aplicación es ideal para cualquiera que quiera tomar el control de su presupuesto personal.",
+    image: "/projects-img/fd-ui.webp",
+    technologies: ["React", "Typescript", "Tailwind", "Shadcn"],
+    website: "https://financial-dashboard-swart-one.vercel.app/",
+    github: ["https://github.com/R3dgrave/financial-dashboard/"],
+  },
+  {
+    title: "TechStore",
+    id: "techstore",
+    description:
+      "Tienda online de smartphones construida con Bootstrap 5 y JavaScript vanilla.",
+    image: "/projects-img/tech-store.webp",
+    technologies: ["Html5", "Css3", "Javascript", "Bootstrap"],
+    website: "https://r3dgrave.github.io/tienda-celulares/",
+    github: [
+      "https://github.com/R3dgrave/tienda-celulares",
+    ],
   },
   {
     title: "Proyecto Conversor de Monedas",
@@ -73,7 +100,7 @@ const allProjects = [
       "Aplicación web que permite convertir entre diferentes monedas utilizando tasas de cambio en tiempo real, graficos usando la libreria chart.js",
     image: "/conversorMoneda/conversor.webp",
     technologies: ["Html5", "Css3", "Javascript"],
-    website: "https://r3dgrave.github.io/Conversor-de-monedas-USD-EUR/",
+    website: "https://r3dgrave.github.io/Prueba---Conversor-de-monedas/",
     github: ["https://github.com/R3dgrave/Conversor-de-monedas-USD-EUR"],
   },
 ];
@@ -95,6 +122,7 @@ const techIcons = {
     <SiTypescript size={30} className="text-blue-500 dark:text-blue-500" />
   ),
   Jest: <SiJest size={30} className="text-red-600 dark:text-red-600" />,
+  Bootstrap: <SiBootstrap size={30} className="text-purple-600 dark:text-purple-600" />,
 };
 
 const Projectos = () => {

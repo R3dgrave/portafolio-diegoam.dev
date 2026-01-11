@@ -994,91 +994,6 @@ export const projectsData = {
       ),
     },
   },
-  "bettys-cakes": {
-    title: "Tienda Postres caseros",
-    description: "",
-    technologies: ["React", "Tailwind", "Supabase"],
-    externalLink: "https://tiendapostres-ui.vercel.app/",
-    githubLink: [
-      {
-        enlace: "https://github.com/R3dgrave/tiendapostres-ui",
-        name: "Frontend",
-      },
-    ],
-    sections: [
-      { id: "overview", title: "Visión General" },
-      { id: "features", title: "Funcionalidades Clave" },
-      { id: "tech-stack", title: "Tecnologías" },
-    ],
-    content: {
-      overview: (
-        <div>
-          <p>
-            Este es un proyecto de demostración para una pastelería, sin carrito
-            de compras ya que la idea es que las ventas se realicen previa
-            coordinacion por WhatsApp, entonces la pagina funcionaria mas como
-            un catalogo para mostar los postres al publico. La aplicación es
-            completamente responsiva y cuenta con un panel de administración
-            para gestionar productos.
-          </p>
-          <div className="my-4 flex justify-center">
-            <ZoomableImage
-              src="/tiendapostres/bettys_cake_1.webp"
-              alt="Captura de pantalla de la interfaz"
-              className="w-[80%] rounded-lg shadow-md"
-            />
-          </div>
-        </div>
-      ),
-      features: (
-        <div>
-          <ul className="list-disc list-inside">
-            <li>Panel de administración CRUD.</li>
-            <li>Catalogo de productos</li>
-            <li>Productos divididos por categoria</li>
-            <li>Autenticación de administrador con Supabase.</li>
-          </ul>
-          <div className="my-4 flex justify-center">
-            <ZoomableImage
-              src="/tiendapostres/bettys_cake_2.webp"
-              alt="Captura de pantalla de la interfaz"
-              className="w-[80%] rounded-lg shadow-md"
-            />
-          </div>
-        </div>
-      ),
-      "tech-stack": (
-        <div>
-          <p>
-            El proyecto fue desarrollado con React para el frontend, Tailwind
-            CSS para los estilos y Supabase como backend-as-a-service, que
-            maneja la base de datos y la autenticación.
-          </p>
-          <div className="my-4 flex justify-center">
-            <ZoomableImage
-              src="/tiendapostres/bettys_cake_3.webp"
-              alt="Captura de pantalla de la interfaz"
-              className="w-[80%] rounded-lg shadow-md"
-            />
-          </div>
-          <div className="my-4 flex justify-center">
-            <ZoomableImage
-              src="/tiendapostres/bettys_cake_4.webp"
-              alt="Captura de pantalla de la interfaz"
-              className="w-[80%] rounded-lg shadow-md"
-            />
-          </div>
-          <div className="my-4 flex justify-center">
-            <ZoomableImage
-              src="/tiendapostres/bettys_cake_5.webp"
-              alt="Captura de pantalla de la interfaz"
-              className="w-[80%] rounded-lg shadow-md"
-            />
-          </div>
-        </div>
-      ),
-    },
-  },
   "currency-converter": {
     title: "Proyecto Conversor de Monedas",
     description:
@@ -1176,7 +1091,6 @@ export const projectsData = {
       ),
     },
   },
-
   "Development-Services": {
     title: "Servicios de Desarrollo web Profesional",
     description:
@@ -1262,7 +1176,6 @@ export const projectsData = {
       ),
     },
   },
-
   "landing-page": {
     title: "Landing Page",
     description:
@@ -1345,7 +1258,6 @@ export const projectsData = {
       ),
     },
   },
-
   "random-color": {
     title: "Color Aleatorio",
     description:
@@ -1421,7 +1333,6 @@ export const projectsData = {
       ),
     },
   },
-
   calculator: {
     title: "Calculadora",
     description:
@@ -1497,7 +1408,6 @@ export const projectsData = {
       ),
     },
   },
-
   "quick-notes": {
     title: "Notas Rápidas",
     description:
@@ -1579,7 +1489,6 @@ export const projectsData = {
       ),
     },
   },
-
   ecommerceApi: {
     title: "Api E-commerce Node.js",
     description:
